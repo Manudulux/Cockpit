@@ -6,17 +6,20 @@ from geopy.geocoders import Nominatim
 from geopy.extra.rate_limiter import RateLimiter
 import os
 
-st.set_page_config(page_title="SAP Location Map", layout="wide")
+st.set_page_config(page_title="Persistent SAP Map", layout="wide")
 
-st.title("📍 Interactive Site Map")
+# File paths
+SAP_FILE = 'T001W.txt'
+CACHE_FILE = 'geocoded_cache.csv'
 
-# --- 1. ROBUST DATA LOADING ---
+st.title("📍 Site Map with Persistent Cache")
+
+# --- 1. DATA LOADING & CLEANING ---
 @st.cache_data
-def load_data(file_path):
+def load_sap_data(file_path):
     if not os.path.exists(file_path):
-        return None, "File not found."
-
-    # First, find which row contains the actual headers
+        return None, "SAP file not found."
+    
     header_idx = 0
     with open(file_path, 'r', encoding='ISO-8859-1') as f:
         for i, line in enumerate(f):
@@ -24,108 +27,105 @@ def load_data(file_path):
                 header_idx = i
                 break
     
-    # Load the file starting from the detected header row
-    try:
-        df = pd.read_csv(file_path, sep='\t', encoding='ISO-8859-1', skiprows=header_idx)
-        
-        # Clean column names (remove leading/trailing spaces and tabs)
-        df.columns = df.columns.str.strip()
-        
-        # Filter out empty 'Unnamed' columns caused by leading tabs in the file
-        df = df.loc[:, ~df.columns.str.contains('^Unnamed')]
-        
-        # Check if required columns exist
-        required = ['NAME1', 'ORT01', 'STRAS', 'LAND1']
-        missing = [col for col in required if col not in df.columns]
-        
-        if missing:
-            return None, f"Missing columns in file: {missing}. Found: {list(df.columns[:5])}..."
+    df = pd.read_csv(file_path, sep='\t', encoding='ISO-8859-1', skiprows=header_idx)
+    df.columns = df.columns.str.strip()
+    df = df.loc[:, ~df.columns.str.contains('^Unnamed')]
+    df = df.dropna(subset=['NAME1', 'ORT01'])
+    
+    # Create the unique address string (used as our lookup key)
+    df['Full_Address'] = (
+        df['STRAS'].fillna('').astype(str).str.strip() + ', ' + 
+        df['PSTLZ'].fillna('').astype(str).str.replace('.0', '', regex=False).str.strip() + ' ' + 
+        df['ORT01'].astype(str).str.strip() + ', ' + 
+        df['LAND1'].astype(str).str.strip()
+    )
+    return df, None
 
-        # Drop purely decorative rows (like lines of dashes) or empty rows
-        df = df.dropna(subset=['NAME1', 'ORT01'])
-        
-        # Create a clean address string for geocoding
-        # Handles Zip codes (PSTLZ) being read as numbers or strings
-        df['Full_Address'] = (
-            df['STRAS'].fillna('').astype(str).str.strip() + ', ' + 
-            df['PSTLZ'].fillna('').astype(str).str.replace('.0', '', regex=False).str.strip() + ' ' + 
-            df['ORT01'].astype(str).str.strip() + ', ' + 
-            df['LAND1'].astype(str).str.strip()
-        )
-        return df, None
-        
-    except Exception as e:
-        return None, f"Parsing error: {str(e)}"
+# --- 2. PERSISTENT CACHE LOGIC ---
+def get_geocoded_data(df):
+    # Load existing cache if it exists
+    if os.path.exists(CACHE_FILE):
+        cache_df = pd.read_csv(CACHE_FILE)
+        # Keep only the unique address and its coordinates
+        cache_df = cache_df[['Full_Address', 'lat', 'lon']].drop_duplicates('Full_Address')
+    else:
+        cache_df = pd.DataFrame(columns=['Full_Address', 'lat', 'lon'])
 
-# --- 2. CACHED GEOCODING ---
-@st.cache_data
-def geocode_addresses(df_subset):
-    geolocator = Nominatim(user_agent="sap_map_app_v1")
-    geocode = RateLimiter(geolocator.geocode, min_delay_seconds=1.2)
+    # Merge SAP data with cache
+    merged_df = df.merge(cache_df, on='Full_Address', how='left')
     
-    # To keep performance stable, we'll map the first 30 locations
-    # You can increase this, but geocoding is slow (1.5s per address)
-    df_to_map = df_subset.head(30).copy()
-    
-    lats, lons = [], []
-    progress_bar = st.progress(0)
-    
-    for i, row in enumerate(df_to_map.itertuples()):
-        try:
-            location = geocode(row.Full_Address)
-            if location:
-                lats.append(location.latitude)
-                lons.append(location.longitude)
-            else:
+    # Identify rows that still need geocoding (lat/lon are NaN)
+    to_geocode = merged_df[merged_df['lat'].isna()].copy()
+    already_geocoded = merged_df[merged_df['lat'].notna()].copy()
+
+    if not to_geocode.empty:
+        st.info(f"Geocoding {len(to_geocode)} new addresses...")
+        geolocator = Nominatim(user_agent="sap_persistent_map")
+        geocode = RateLimiter(geolocator.geocode, min_delay_seconds=1.2)
+        
+        lats, lons = [], []
+        progress_bar = st.progress(0)
+        
+        for i, row in enumerate(to_geocode.itertuples()):
+            try:
+                location = geocode(row.Full_Address)
+                lats.append(location.latitude if location else None)
+                lons.append(location.longitude if location else None)
+            except:
                 lats.append(None)
                 lons.append(None)
-        except:
-            lats.append(None)
-            lons.append(None)
-        progress_bar.progress((i + 1) / len(df_to_map))
+            progress_bar.progress((i + 1) / len(to_geocode))
         
-    df_to_map['lat'] = lats
-    df_to_map['lon'] = lons
-    return df_to_map.dropna(subset=['lat', 'lon'])
+        to_geocode['lat'] = lats
+        to_geocode['lon'] = lons
+        
+        # Combine old and new findings
+        updated_full_df = pd.concat([already_geocoded, to_geocode])
+        
+        # Save ONLY the geocoding results to the cache file for next time
+        # We drop rows where geocoding failed so we can try them again later if needed
+        save_df = updated_full_df.dropna(subset=['lat', 'lon'])[['Full_Address', 'lat', 'lon']]
+        save_df.to_csv(CACHE_FILE, index=False)
+        
+        return updated_full_df
+    
+    return already_geocoded
 
-# --- MAIN APP LOGIC ---
+# --- MAIN APP ---
+data, error = load_sap_data(SAP_FILE)
 
-# Attempt to load the file
-data, error_msg = load_data('T001W.txt')
-
-if error_msg:
-    st.error(error_msg)
-    st.info("Ensure T001W.txt is in the same folder as this script on GitHub.")
+if error:
+    st.error(error)
 else:
-    st.sidebar.success(f"Successfully loaded {len(data)} locations.")
+    # Always display stats
+    st.sidebar.write(f"Total sites in file: {len(data)}")
     
-    # User selects how many locations to map
-    num_to_map = st.sidebar.slider("Number of sites to geocode", 5, 50, 20)
-    
-    if st.sidebar.button("Generate Map"):
-        with st.spinner("Geocoding addresses... (This takes ~1.5s per location)"):
-            mapped_df = geocode_addresses(data.head(num_to_map))
+    if st.sidebar.button("Update & View Map"):
+        final_df = get_geocoded_data(data)
+        map_ready_df = final_df.dropna(subset=['lat', 'lon'])
+        
+        if not map_ready_df.empty:
+            st.success(f"Displaying {len(map_ready_df)} sites ({len(final_df)-len(map_ready_df)} failed to locate).")
             
-            if not mapped_df.empty:
-                # Create the map centered at the average coordinates
-                avg_lat = mapped_df['lat'].mean()
-                avg_lon = mapped_df['lon'].mean()
-                m = folium.Map(location=[avg_lat, avg_lon], zoom_start=4)
-                
-                # Add individual markers
-                for _, row in mapped_df.iterrows():
-                    folium.Marker(
-                        location=[row['lat'], row['lon']],
-                        popup=f"<b>{row['NAME1']}</b><br>{row['Full_Address']}",
-                        tooltip=row['NAME1']
-                    ).add_to(m)
-                
-                # Display the interactive map
-                st_folium(m, width=1000, height=600)
-                st.write(f"Showing {len(mapped_df)} successfully located sites.")
-            else:
-                st.error("Could not find coordinates for these addresses. Please check the address format in the file.")
+            # Map generation
+            m = folium.Map(location=[map_ready_df['lat'].mean(), map_ready_df['lon'].mean()], zoom_start=4)
+            for _, row in map_ready_df.iterrows():
+                folium.Marker(
+                    location=[row['lat'], row['lon']],
+                    popup=f"<b>{row['NAME1']}</b><br>{row['Full_Address']}",
+                    tooltip=row['NAME1']
+                ).add_to(m)
+            
+            st_folium(m, width=1000, height=600)
+        else:
+            st.warning("No coordinates found. Try clicking 'Update' to search.")
 
-    # Show raw data preview in the sidebar
-    if st.sidebar.checkbox("Show Data Preview"):
-        st.write(data[['NAME1', 'STRAS', 'ORT01', 'LAND1']].head(10))
+    if os.path.exists(CACHE_FILE):
+        if st.sidebar.button("Clear Cache"):
+            os.remove(CACHE_FILE)
+            st.sidebar.warning("Cache deleted. Next run will re-search everything.")
+
+
+
+
+
