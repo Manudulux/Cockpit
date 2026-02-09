@@ -3,3 +3,4 @@ folium
 streamlit
 streamlit-folium
 geopy
+altair<5
