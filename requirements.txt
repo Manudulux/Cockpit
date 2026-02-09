@@ -1,6 +1,6 @@
+streamlit>=1.39.0
 pandas
 folium
-streamlit
 streamlit-folium
 geopy
-altair<5
+altair>=5.0.0
