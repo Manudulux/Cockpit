@@ -1,0 +1,438 @@
+09.02.2026                                                                                                                                                                                                                                                                  Dynamic List Display                                                                                                                                                                                                                                                                                                                           1
+
+
+		MANDT	WERKS	NAME1	BWKEY	KUNNR	VKORG	VTWEG	LIFNR	FABKL	NAME2	STRAS	PFACH	PSTLZ	ORT01	EKORG	CHAZV	KKOWK	KORDB	BEDPL	LAND1	REGIO	COUNC	CITYC	ADRNR	IWERK	TXJCD	SPART	SPRAS	WKSOP	AWSLS	CHAZV_OLD	VLFKZ	BZIRK	ZONE1	TAXIW	BZQHL	LET01	LET02	LET03	TXNAM_MA1	TXNAM_MA2	TXNAM_MA3	BETOL	J_1BBRANCH	VTBFI	FPRFW	ACHVM	DVSART	NODETYPE	NSCHEMA	PKOSA	MISCH	MGVUPD	VSTEL	MGVLAUPD	MGVLAREVAL	SOURCING	SGT_STAT	FSH_MG_ARUN_REQ	FSH_SEAIM	FSH_BOM_MAINTENANCE	OILIVAL	OIHVTYPE	OIHCREDIPI	STORETYPE	DEP_STORE
+
+	X	100	0001	Werk 0001	0001		0001	01		01	Walldorf	Neurottstraße 16		69190	Walldorf	0001				X	DE							01	D									  10	  20	  30	FT_PREF_DUNN	FT_PREF_DUNN_TWO	FT_PREF_FRAME	  180											0001
+	X	100	AE01	Goodyear Dubai	AE01	AE01	AE01	07	AE01	W1	Goodyear Middle East FZE	Jebel Ali Freezone	17041		Dubai	AEM1				X	AE				0001065164			01	E									   0	   0	   0				  000											AE01
+	X	100	AE02	Goodyear Dubai JV	AE02	AE02	AE02	03	AE02	W1	Goodyear Middle East JV	Jebel Ali Freezone	17041		Dubai	AEM2				X	AE				0001065165			01	E									   0	   0	   0				  000											AE02
+	X	100	AE03	Goodyear Middle East FZE	AE03	AE03	AE03	07		W1	Offshore	Jebel Ali Freezone	17857		Dubai	AEM3				X	AE				0001065166			01	E									   0	   0	   0				  000											AE01
+	X	100	AE04	Goodyear Dubai Other	AE04	AE04	AE04	07		W1	Goodyear Middle East FZE Other	Jebel Ali Freezone	17041		Dubai	AEM4				X	AE				0004577093			01	E									   0	   0	   0				  000											AE04
+	X	100	AE20	YRC Dubai	AE20	AE20	AE20	07	AE20	W1	YOKOHAMA	Jebel Ali Freezone	17041		Dubai	AEM1				X	AE				0008993525			01	E									   0	   0	   0				  000											AE01
+	X	100	AE90	Dubai Head Office	AE90					W1	Goodyear Middle East FZE	Suite 2204  FIoor - 22	17857		Dubai	AEP1					AE				0001065144				E									   0	   0	   0				  000
+	X	100	AE91	Dubai Head Office	AE91					W1	Goodyear Tyres UK (BR)	Suite # 2204  FIoor - 22	17857		Dubai	AEP2					AE				0001231243				E									   0	   0	   0				  000
+	X	100	AT01	CPIC - Wels	AT01	AT01	EU01	03	AT01	AT	Goodyear Operations S.A.	Böhmwalderstrasse 37		4600	Wels	EUM1				X	AT				0000022714			01	E									   0	   0	   0				  000											AT01
+	X	100	AT40	CPIC - AT Motorsp. Event St.	AT40	AT40	EU01	03	AT40	ZU	Goodyear Operations S.A.					EUM1				X	AT				0001120855			01	E									   0	   0	   0				  000							0001	X			AT40
+	X	100	AT80	FOS - Austria	AT80	AT80	EU01	03		AT	Goodyear Austria GmbH	Böhmwalderstrasse 37		4600	Wels	ATF1					AT				0000022715			01	E							1		   0	   0	   0				  000											AT01
+	X	100	AT81	FOS Austria (DACH)	AT81	AT81	EU01	03	AT81	AT	Goodyear Dunlop Tires	Böhmwalderstrasse 37		4600	Wels	ATF2					AT				0002243572			01	E							1		   0	   0	   0				  000
+	X	100	AT90	Purchasing - Austria	AT90					AT	Goodyear Austria GmbH	Lehrbachgasse 13		1120	Wien	ATP1				X	AT				0000022716				D							1		   0	   0	   0				  000
+	X	100	BE01	CPIC BE Machelen HUB	BE01	BE01	EU01	03	BE01	BE	Goodyear Operations S.A.	Trawoollaan 4		1830	Machelen	EUM1				X	BE				0000098234			01	E									   0	   0	   0				  000											BE01
+	X	100	BE20	YRC BE Machelen	BE20	BE20	EU20	03	BE20	BE	Yokohama	Trawoollaan 4		1830	Machelen	EUM1					BE				0009129970			01	E									   0	   0	   0				  000											BE01
+	X	100	BE40	CPIC - BE Motorsp. Event St.	BE40	BE40	EU01	03	BE40	ZU	Goodyear Operations S.A.					EUM1				X	BE				0000460254			01	E									   0	   0	   0				  000							0001	X			BE40
+	X	100	BE80	FOS - Belgium	BE80		EU01	03	BE80	BE	Goodyear Belgium	Kernenergiestraat 60		2610	Wilrijk	BEF1					BE				0000098235			01	E							1		   0	   0	   0				  000											BEME
+	X	100	BE90	Purchasing - Belgium HQ	BE90					BE	Goodyear Belgium	Berkenlaan 8B		1831	Diegem	BEP1				X	BE				0000022717				E							1		   0	   0	   0				  000
+	X	100	BE91	Purchasing - Belgium HO	BE91		BE01	03		BE	Goodyear Belgium	Prins Boudewijnlaan 5		2550	Kontich	BEP2					BE				0000098236			01										   0	   0	   0				  000
+	X	100	BEEX	CPIC - BE KTN	BEEX	BEEX	EU01	03	BEEX	BE	Goodyear Operations S.A.	Oudedijk 1		9130	Beveren	EUP1				X	BE				0006644868			01	E									   0	   0	   0				  000											BEEX
+	X	100	BEX1	OE CPIC - Volvo Fitting Center	BEX1	BEX1	EU01	03	BEX1	BE	Goodyear Operations S.A.	Smalleheerweg 31		9041	Gent Oostakker	EUM1				X	BE				0000022718			01	E									   0	   0	   0				  000											BEX1
+	X	100	BEX2	OE CPIC - Wat S.A.	BEX2	BEX2	EU01	03	BEX2	BE	Goodyear Operations S.A.	Rue L Bleriot		6041	Gent Oostakker	EUM1				X	BE				0000022719			01	E									   0	   0	   0				  000											BEX2
+	X	100	BEX3	OE CPIC - Van Hool	BEX3	BEX3	EU01	03	BEX3	BE	Goodyear Operations S.A.	Bernard van Hoolstraat 58		2500	Lier Koningshooik	EUM1				X	BE				0000098237			01	E									   0	   0	   0				  000											BEX3
+	X	100	BEY1	OE CPIC - Schedl Bruxelles	BEY1	BEY1	EU01	03	BEY1	BE	Goodyear Operations S.A.	Rue Marguerite Bervoets 45		1190	Bruxelles (Forest)	EUM1				X	BE				0000098238			01	E									   0	   0	   0				  000											BEY1
+	X	100	BEY2	OE Ghent Warehousing Systems	BEY2	BEY2	EU01	03	BEY2	BE	NV GPS - GY Operations S.A.	Skaldenstraat 121 B2		9042	Gent	EUM1				X	BE				0000098239			01	E									   0	   0	   0				  000											BEY2
+	X	100	BEY3	OE CPIC - Bongaerts Genk	BEY3	BEY3	EU01	03	BEY3	BE	Goodyear Operations S.A.	Marcel Habetslaan 18 A		3600	Genk - Noord (Zwartberg)	EUM1				X	BE				0000098240			01	E									   0	   0	   0				  000											BEY3
+	X	100	BG20	YRC Romania SR L- branch Bulg.	BG20	BG20	EU20	03	BG20	BG	YOKOHAMA	Sitnyakovo Blvd. 48		1505	Sofia	EUM1				X	BG				0008993526			01	E									   0	   0	   0				  000											RO01
+	X	100	BG80	FOS - Bulgaria	BG80		BG01	11		BG	Goodyear Romania SRL-Bulgaria	Tsarigradsko shose Blvd.		60-62	Sofia	BGF1					BG				0006919799			01	E							1		   0	   0	   0				  000
+	X	100	BG81	FOS - Bulgaria Branch	BG81		BG11	11		BG	Goodyear Romania SRL-Bulgaria	Tsarigradsko shose Blvd.		60-62	Sofia	BGF2					BG				0009469524			01	E							1		   0	   0	   0				  000
+	X	100	BG90	Purchasing - Sofia HQ BG90	BG90					BG	GY Romania - Bulgarian Branch	16, Joliot Curie, bl 155		1113	Sofia	BGP1				X	BG				0000772688				E									   0	   0	   0				  000
+	X	100	BG91	Goodyear Bulgaria Branch	BG91					BG	GY Romania SRL Bulgaria Branch	Sitnyakovo Blvd. 48		1505	Sofia	BGP2				X	BG				0006060449				E									   0	   0	   0				  000
+	X	100	BG92	Goodyear Bulgaria Branch	BG92					BG	GY Romania SRL Bulgaria Branch	Sitnyakovo Blvd. 48		1505	Sofia	BGP3					BG				0009469525				E									   0	   0	   0				  000
+	X	100	CH01	CPIC - Bülach	CH01	CH01	EU01	03	CH01	CH	Goodyear Operations S.A.	Schützenmattstrasse 266		8180	Bülach	EUM1				X	CH	ZH			0000022720			01	E									   0	   0	   0				  000											CH01
+	X	100	CH03	CPIC - Schwarzenbach	CH03	CH03	EU01	03	CH03	CH	Goodyear Operations S.A.	Wilerstrasse 35c		9536	Schwarzenbach	EUM1				X	CH	SG			0007264263			01	E									   0	   0	   0				  000											CH03
+	X	100	CH80	FOS - Switzerland	CH80	CH80	EU01	03	CH80	CH	Goodyear Suisse SA	Schützenmattstrasse 266		8180	Bülach	CHF1					CH	ZH			0000022721			01	E							1		   0	   0	   0				  000											CH01
+	X	100	CH81	FOS Switzerland (DACH)	CH81	CH81	EU01	03	CH81	CH	Goodyear Dunlop Tires	Schützenmattstrasse 266		8180	Bülach	CHF2					CH	ZH			0002243573			01	E							1		   0	   0	   0				  000
+	X	100	CH90	Purchasing - Switzerland	CH90					CH	Goodyear Suisse SA	Industriestrasse 28		8604	Volketswil	CHP1				X	CH				0000022722				E							1		   0	   0	   0				  000
+	X	100	CN90	FOS Indirect Virtual Plant	CN90					LU	Goodyear Operations APAC										CN				0007131226				E									   0	   0	   0				  000
+	X	100	CNCD	CN CNCD Dalian production	CNCD					CN	Goodyear Dalian Tire Co.	25 Shiquiao Street, Shahekou D		116033	Dalian					X	CN				0000339568				E									   0	   0	   0				  000
+	X	100	CNKU	Cooper (Kunshan) Tire	CNKU					CN		No.168 Bailing Road		215331	Kunshan					X	CN	100			0007910895				E									   0	   0	   0				  000
+	X	100	CNPU	CN CNPU Pulandian production	CNPU					CN	Goodyear Pulandian Tire Co.	8 ZhenXing Street		116200	PuLanDian, DaLian					X	CN				0000578690				E									   0	   0	   0				  000
+	X	100	CNQI	Cooper (Qingdao) Tire	CNQI					CN		No. 210 Tianxin Road		266700	Qingdao					X	CN	120			0007910896				E									   0	   0	   0				  000
+	X	100	CZ01	Schedl Automotive System Serv.	CZ01	CZ01	EU01	03	CZ01	CZ	Goodyear Operations S.A.	#epov 174		293 01	#epov	EUM1				X	CZ				0000772632			01	E									   0	   0	   0				  000							0001	X			CZ01
+	X	100	CZ02	CPIC - Cheb	CZ02	CZ02	EU01	03	CZ02	CC	Goodyear Operations S.A.	Jesenice 22		350 02	Okrouhlá – Jesenice	EUM1				X	CZ				0008163255			01	E									   0	   0	   0				  000							0001	X			CZ02
+	X	100	CZ40	CPIC - CZ Motorsp. Event St.	CZ40	CZ40	EU01	03	CZ40	ZU	Goodyear Operations S.A.					EUM1				X	CZ				0000460255			01	E									   0	   0	   0				  000							0001	X			CZ40
+	X	100	CZ70	Tysys Wholesale	CZ70	CZ70	EU01	03	CZ70	CZ		Jesenice 22		350 02	Okrouhlá – Jesenice	EUM1					CZ				0008453311			01	E									   0	   0	   0				  000											CZ02
+	X	100	CZ71	TYSYS Car Dealer	CZ71	CZ71	EU01	03	CZ71	CZ		Jesenice 22		350 02	Okrouhlá – Jesenice	EUM1				X	CZ				0008453312			01	E							1		   0	   0	   0				  000							0001	X			CZ02
+	X	100	CZ80	FOS - Czechia	CZ80		EU01	03	CZ80	CZ	Goodyear Czech s.r.o.	K Vypichu 986		252 19	Rudna	CZF1					CZ				0000772633			01	E							1		   0	   0	   0				  000
+	X	100	CZ83	Tysys Billing	CZ83		DE81	01		CZ	4Fleet GmbH	Lipoltov 26		350 02	Tu#any	DER1					CZ				0008453313			01	D							1		   0	   0	   0				  000											CZ02
+	X	100	CZ90	Purchasing - Praha HQ	CZ90					CZ	Goodyear Czech s.r.o.	Vyskocilova 1481/4		140 00	Praha 4	CZP1				X	CZ				0000772689				E							1		   0	   0	   0				  000
+	X	100	CZY1	OE CPIC - Schedl Ml. Boleslav	CZY1	CZY1	EU01	03	CZY1	CX	Goodyear Operations S.A.	Preymesser area - Hall no. H4		293 01	Mlada Boleslav	EUM1				X	CZ				0000098241			01	E									   0	   0	   0				  000											CZY1
+	X	100	CZY2	OE CPIC - Schedl Kvasiny	CZY2	CZY2	EU01	03	CZY2	CZ	Goodyear Operations S.A.	Preymesser area		516 01	Rychnov nad Kn#žnou	EUM1				X	CZ				0004302366			01	E									   0	   0	   0				  000											CZY2
+	X	100	CZY3	OE CPIC - TOYOTA TTESA	CZY3	CZY3	EU01	03	CZY3	CX	Goodyear Operations S.A.	Pr#myslová zóna Ov#áry 277		280 02	Ov#áry	EUM1				X	CZ				0007131216			01	E									   0	   0	   0				  000											CZY3
+	X	100	DE01	CPIC - Philippsburg	DE01	DE01	EU01	03	DE01	DP	Goodyear Operations S.A.	Goodyearstrasse 1a		76661	Philippsburg	EUM1				X	DE	08			0000098242			01	D									   0	   0	   0				  000							0001	X			DE01
+	X	100	DE02	G GER Tires Manuf. Dummy	DE02		DE01	03			Goodyear Germany Manuf GmbH&KG	Dunlopstr. 2		63450	Hanau	DEP6					DE				0005002442			01	E									   0	   0	   0				  000
+	X	100	DE03	CPIC - Chrome Pburg	DE03	DE03	EU01	03	DE03	W8	Goodyear Operations S.A.	Goodyearstrasse 1a		76661	Philippsburg	EUM1				X	DE	08			0006060461			01	D									   0	   0	   0				  000							0001	X			DE01
+	X	100	DE04	Goodyear Hanau Manufacturing	DE04		DE01	03			GD GER Tires Manuf. Dummy	Dunlopstr. 2		63450	Hanau	DEP7					DE				0007021159			01	E									   0	   0	   0				  000
+	X	100	DE05	CPIC - Bitburg	DE05	DE05	EU01	03	DE05	D7	Goodyear Operations S.A.	Am Tower 13		54634	Bitburg	EUM1					DE	07			0008453308			01	D									   0	   0	   0				  000											DE05
+	X	100	DE17	CPIC - Hahn (Bucher)	DE17	DE17	EU01	03	DE17	D7	Goodyear Operations S.A.	Building 840		55483	Hahn - Flughafen	EUM1				X	DE	07			0004302360			01	E									   0	   0	   0				  000											DE17
+	X	100	DE20	YRC Wittlich	DE20	DE20	EU20	03	DE20	D7	YOKOHAMA	Justus-von-Liebig-Str. 1		54516	Wittlich	EUM1				X	DE	07			0008959535			01	D									   0	   0	   0				  000							0001	X			DE57
+	X	100	DE22	CPIC - München HUB	DE22	DE22	EU01	03	DE22	01	Goodyear Operations S.A.	Boschstr. 8		82282	Unterschweinbach	EUM1				X	DE	09			0000098243			01	D									   0	   0	   0				  000							0001	X			DE22
+	X	100	DE2A	DIKABO GmbH	DE2A	DE2A	EU01	03		01	Goodyear Operations S.A.	Südfelde 4		48480	Spelle	EUP1					DE				0000321414			01	E									   0	   0	   0				  000											DE2A
+	X	100	DE30	CPIC - Fulda	DE30	DE30	EU01	03	DE30	D6	Goodyear Operations S.A.	Künzeller Str. 59		36043	Fulda	EUM1				X	DE	06			0000098244			01	D									   0	   0	   0				  000							0001	X			DE30
+	X	100	DE31	CPIC - Dorfborn	DE31	DE31	EU01	03	DE31	D6	Goodyear Operations S.A.	Im Eichig		36119	Neuhof	EUM1				X	DE	06			0006592773			01	D									   0	   0	   0				  000							0001	X			DE31
+	X	100	DE40	CPIC - DE Motorsport	DE40	DE40	EU01	03	DE40	ZU	Goodyear Operations S.A.	Industrieweg 45		63450	Hanau	EUM1				X	DE				0000522874			01	E									   0	   0	   0				  000							0001	X			DE40
+	X	100	DE51	CPIC - Hanau	DE51	DE51	EU01	03	DE51	D6	Goodyear Operations S.A.	Industrieweg 45		63450	Hanau	EUM1				X	DE	06			0000098245			01	D									   0	   0	   0				  000							0001	X			DE51
+	X	100	DE52	CPIC - Rodenbach	DE52	DE52	EU01	03	DE52	D6	Goodyear Operations S.A.	Industriestrasse 19		63517	Rodenbach	EUM1					DE	06			0006819047			01	D									   0	   0	   0				  000											DE52
+	X	100	DE53	CPIC - Hanau	DE53	DE53	EU01	03	DE53	D6	Goodyear Operations S.A.	Industrieweg 45		63450	Hanau	EUM1				X	DE	06			0009469517			01	D									   0	   0	   0				  000							0001	X			DE51
+	X	100	DE55	CPIC - Fürstenwalde	DE55	DE55	EU01	03	DE55	D5	Goodyear Operations S.A.	Tränkeweg 15a		15517	Fürstenwalde	EUM1				X	DE	12			0000098246			01	D									   0	   0	   0				  000							0001	X			DE55
+	X	100	DE56	CPIC - Riesa	DE56	DE56	EU01	03	DE56	D9	Goodyear Operations S.A.	Paul-Greifzu-Str. 18		01591	Riesa	EUM1				X	DE	14			0000098247			01	D									   0	   0	   0				  000							0001	X			DE56
+	X	100	DE57	CPIC - Wittlich	DE57	DE57	EU01	03	DE57	D7	Goodyear Operations S.A.	Justus-von-Liebig-Str. 1		54516	Wittlich	EUM1				X	DE	07			0000098248			01	D									   0	   0	   0				  000							0001	X			DE57
+	X	100	DE58	CPIC - Bottrop HUB	DE58	DE58	EU01	03	DE58	01	Goodyear Operations S.A.	Am Rhein - Herne - Kanal 1-4		46242	Bottrop	EUM1				X	DE	05			0000098249			01	D									   0	   0	   0				  000							0001	X			DE58
+	X	100	DE64	CPIC - Motorsport Track	DE64	DE64	EU01	03	DE64	01	Goodyear Operations S.A.	Dunlopstr. 2		63450	Hanau	EUM1				X	DE	06			0000098250			01	D									   0	   0	   0				  000							0001	X			DE64
+	X	100	DE65	CPIC - Motorsport	DE65	DE65	EU01	03	DE65	01	Goodyear Operations S.A.	Dunlopstr. 2		63450	Hanau	EUM1				X	DE	06			0000098251			01	D									   0	   0	   0				  000							0001	X			DE65
+	X	100	DE66	Goodyear Motorsport Warehouse	DE66	DE66	DE35	03	DE66	01		Birkenhainer Strasse 79		63450	Hanau	DEM1				X	DE	06			0000098252			01	D									   0	   0	   0				  000							0001	X			DE66
+	X	100	DE70	DE Tysys	DE70	DE70	DE81	03	DE70	DP	4Fleet GmbH	Goodyearstr. 1a		76661	Philippsburg	DER1				X	DE	08			0000098253			01	D							1		   0	   0	   0				  000							0001	X			DE01
+	X	100	DE71	DE Tysys / Toy	DE71	DE71	DE81	03	DE71	DP	4Fleet GmbH	Goodyearstr. 1a		76661	Philippsburg	DER1				X	DE	08			0000098254			01	D							1		   0	   0	   0				  000							0001	X			DE01
+	X	100	DE73	DE Tysys Baierlacher	DE73	DE73	DE81	03	DE73	DP	4Fleet GmbH	Holzhofring 15		82362	Weilheim	DER1				X	DE	09			0008641535			01	D							1		   0	   0	   0				  000							0001	X			DE73
+	X	100	DE75	DE BMW Logistic Service	DE75	DE75	DE01	03	DE75	DP	Goodyear Germany GmbH	Goodyearstrasse 1a		76661	Philippsburg	DEM2				X	DE	08			0000845206			01	D							1		   0	   0	   0				  000							0001	X			DE01
+	X	100	DE76	DE Cooper Logistic Service	DE76		DE76	01	DE76	DP	Cooper	Goodyearstrasse 1a		76661	Philippsburg	DEM3				X	DE	08			0005102039			01	E							1		   0	   0	   0				  000							0001	X			DE01
+	X	100	DE80	FOS - Germany	DE80		EU01	03		AT	Goodyear Dunlop Tires	Xantener Straße 105		50733	Köln	DEF1					DE	05			0000098255			01	E							1		   0	   0	   0				  000
+	X	100	DE82	FOS - Germany Dummy	DE82					01	Goodyear Germany GmbH	Goodyearstrasse 1a		76661	Philippsburg	DEF2					DE	08			0001518662				D							1		   0	   0	   0				  000
+	X	100	DE84	Retail B2C-Germany	DE84		DE82	01		01	4Fleet GmbH	Xantener Straße 105		50733	Köln	DER1					DE	05			0002017357			01	D							1		   0	   0	   0				  000
+	X	100	DE90	DE HQ GOODYEAR	DE90				DE90	01	Goodyear Retail Systems GmbH	Xantener Strasse 105		50733	Köln	DEP1					DE				0000098256				D							1		   0	   0	   0				  000
+	X	100	DE91	4Fleet Group GmbH	DE91		DE01	03		W8	4Fleet Group GmbH	Xantener Straße 105		50733	Köln	DEP5				X	DE	05			0004458530	DEHU		01	D									   0	   0	   0				  000							0001	X	X
+	X	100	DE92	DE GHS	DE92		DE01	03		W8	Goodyear Retail Systems GmbH	Xantener Straße 105		50733	Köln	DEP4				X	DE	05			0004458531	DEHU		01	D									   0	   0	   0				  000							0001	X	X
+	X	100	DE93	Reifen Baierlacher GmbH	DE93					01		Holzhofstrasse 14		82362	Weilheim	DEP1					DE				0006819050				E							1		   0	   0	   0				  000
+	X	100	DE94	Reifen Burkhardt GmbH	DE94					01		Murgstraße 12-14		76646	Bruchsal	DEP1					DE				0007780097				E							1		   0	   0	   0				  000
+	X	100	DE95	GRIP Reifen und Räder GmbH	DE95					01		Akazienstraße 11		16356	Werneuchen	DEP1					DE				0008029273				E							1		   0	   0	   0				  000
+	X	100	DE96	WW Reifen GmbH	DE96					01		Boschring 20		56422	Wirges	DEP1					DE	07			0009289048				E							1		   0	   0	   0				  000
+	X	100	DE97	VMAT	DE97					01		Tränkeweg 9		63755	Frankfurt am Main	DEP1					DE				0009607930				E							1		   0	   0	   0				  000
+	X	100	DE99	DE HQ GHS	DE99						GDHS GmbH	Xantener Strasse 105		50733	Köln	DEP1					DE				0001941211				D									   0	   0	   0				  000
+	X	100	DEF1	CPIC Manufact. - Fulda	DEF1	DEF1	EU01	03	DEF1	W8	Goodyear Operations S.A.	Künzeller Strasse 59-61		36043	Fulda	EUP1				X	DE				0000086675			01	D									   0	   0	   0				  000
+	X	100	DEF2	CPIC Manufact. - Fürstenwalde	DEF2	DEF2	EU01	03	DEF2	W8	Goodyear Operations S.A.	Tränkeweg 14		15517	Fürstenwalde	EUP1				X	DE				0000177613			01	D									   0	   0	   0				  000
+	X	100	DEFU	DE Fulda Production	DEFU	DEFU	DE01	03	DEFU	W8	Goodyear Germany GmbH	Künzeller Str. 59-61		36043	Fulda	DEP1				X	DE	06			0000037249	DEFU		01	D									   0	   0	   0				  000							0001	X	X
+	X	100	DEFW	DE Fuerstenwalde Production	DEFW	DEFW	DE01	03	DEFW	W8	Goodyear Germany GmbH	Tränkeweg 14		15517	Fürstenwalde	DEP1				X	DE	12			0000037250	DEFW		01	D									   0	   0	   0				  000							0001	X	X
+	X	100	DEG1	CPIC Manufact. - Philippsburg	DEG1	DEG1	EU01	03	DEG1	W8	Goodyear Operations S.A.	Goodyearstrasse 1		76661	Philippsburg	EUP1				X	DE				0000086676			01	D									   0	   0	   0				  000
+	X	100	DEGE	DE Philippsburg Production	DEGE	DEGE	DE01	03	DEGE	W8	Goodyear Germany GmbH	Goodyearstrasse 1		76661	Philippsburg	DEP1				X	DE	08			0000037251	DEGE		01	D									   0	   0	   0				  000							0001	X	X
+	X	100	DEH1	CPIC Manufact. - Hanau	DEH1	DEH1	EU01	03	DEH1	W8	Goodyear Operations S.A.	Dunlopstrasse 2		63450	Hanau	EUP1				X	DE				0000086677			01	D									   0	   0	   0				  000
+	X	100	DEHU	DE Hanau Production	DEHU	DEHU	DE01	03	DEHU	W8	Goodyear Germany GmbH	Dunlopstr.        2		63450	Hanau	DEP1				X	DE	06			0000037252	DEHU		01	D									   0	   0	   0				  000							0001	X	X
+	X	100	DER1	CPIC Manufact. - Riesa	DER1	DER1	EU01	03	DER1	W8	Goodyear Operations S.A.	Paul-Greifzu-Strasse 20		01591	Riesa	EUP1				X	DE				0000177614			01	D									   0	   0	   0				  000
+	X	100	DERD	DE Germany Development	DERD	DERD	DE35	03		G1	Goodyear Innov. Center Germany	Dunlopstr. 2		63450	Hanau	DEP2					DE	06			0000098257			01	D									   0	   0	   0				  000
+	X	100	DERI	DE Riesa Production	DERI	DERI	DE01	03	DERI	W8	Goodyear Germany GmbH	Paul-Greifzu-Str. 20		01591	Riesa	DEP1				X	DE	14			0000037253	DERI		01	D									   0	   0	   0				  000							0001	X	X
+	X	100	DEV1	VMI - ATYSE-Werl	DEV1	DEV1	EU01	03	DEV1	D7	Goodyear Operations S.A.	Hansering 2		59457	Werl	EUM1				X	DE	05			0006524398			01	E									   0	   0	   0				  000											DEV1
+	X	100	DEV2	VMI - ATYSE-Weiden	DEV2	DEV2	EU01	03	DEV2	D3	Goodyear Operations S.A.	Dr.-Kilian-Str. 12		92637	Weiden	EUM1				X	DE	09			0006524399			01	E									   0	   0	   0				  000											DEV2
+	X	100	DEV3	VMI - Delticom-Sehnde	DEV3	DEV3	EU01	03	DEV3	D5	Goodyear Operations S.A.	Hannoversche Str. 34		31319	Sehnde Höver	EUM1				X	DE	03			0006524400			01	E									   0	   0	   0				  000											DEV3
+	X	100	DEV4	VMI - Delticom - Lager 53	DEV4	DEV4	EU01	03	DEV4	DQ	Goodyear Operations S.A.	Hansebeltstraße 1		23754	Gremersdorf	EUM1					DE	01			0008685999			01	E									   0	   0	   0				  000											DEV4
+	X	100	DEW1	CPIC Manufact. - Wittlich	DEW1	DEW1	EU01	03	DEW1	W8	Goodyear Operations S.A.	Justus-von-Liebig-Strasse		54516	Wittlich	EUP1				X	DE				0000086678			01	D									   0	   0	   0				  000											DEW1
+	X	100	DEWI	DE Wittlich Production	DEWI	DEWI	DE01	03	DEWI	W8	Goodyear Dunlop Tires Germany	Justus-von-Liebig-Str. 1		54516	Wittlich	DEP1				X	DE	07			0000037254	DEWI		01	D									   0	   0	   0				  000							0001	X	X
+	X	100	DEX1	OE CPIC - Reifen-John	DEX1	DEX1	EU01	03	DEX1	01	Goodyear Operations S.A.	Jennerstraße 6		83395	Freilassing	EUM1				X	DE	09			0000022723			01	D									   0	   0	   0				  000											DEX1
+	X	100	DEX2	OE CPIC - John Deere	DEX2	DEX2	EU01	03	DEX2	01	Goodyear Operations S.A.	John Deerestr. 90		68163	Mannheim	EUM1				X	DE	08			0000098258			01	D									   0	   0	   0				  000											DEX2
+	X	100	DEX3	OE CPIC - Schenker	DEX3	DEX3	EU01	03	DEX3	01	Goodyear Operations S.A.	Monaiserstr. 13-15		54294	Trier	EUM1				X	DE	07			0000098259			01	D									   0	   0	   0				  000											DEX3
+	X	100	DEX4	OE CPIC - Woestemeier / Fendt	DEX4	DEX4	EU01	03	DEX4	01	Goodyear Operations S.A.	Füssener Str. 60		87640	Biessenhofen	EUM1				X	DE	09			0000098260			01	D									   0	   0	   0				  000											DEX4
+	X	100	DEX5	OE CPIC - GRASDORF	DEX5	DEX5	EU01	03	DEX5	01	Goodyear Operations S.A.	Ziegeleistrasse 29		31188	Holle	EUM1				X	DE				0000098261			01	D									   0	   0	   0				  000											DEX5
+	X	100	DEX6	OE CPIC - Eichenlaub	DEX6	DEX6	EU01	03	DEX6	01	Goodyear Operations S.A.	Große Ahlmühle 4		76875	Rohrbach	EUM1				X	DE				0000098262			01	D									   0	   0	   0				  000											DEX6
+	X	100	DEX7	OE CPIC - IVECO	DEX7	DEX7	EU01	03	DEX7	01	Goodyear Operations S.A.	Graf-Arco-Strasse 18/1		89079	Ulm	EUM1				X	DE	09			0000098263			01	D									   0	   0	   0				  000											DEX7
+	X	100	DEX8	OE CPIC - Reifen-Sessler	DEX8	DEX8	EU01	03	DEX8	01	Goodyear Operations S.A.	Mannheimer Strasse 13		68766	Hockenheim	EUM1				X	DE	08			0000946164			01	D									   0	   0	   0				  000											DEX8
+	X	100	DEY1	OE CPIC - Radsystem Hannover	DEY1	DEY1	EU01	03	DEY1	01	Goodyear Operations S.A.	Jädekamp 30		30419	Hannover-Stöcken	EUM1				X	DE	03			0000098264			01	D									   0	   0	   0				  000											DEY1
+	X	100	DEY2	OE CPIC - Radsystem Mosel	DEY2	DEY2	EU01	03	DEY2	01	Goodyear Operations S.A.	Glauchauer Str. 38		08058	Zwickau	EUM1				X	DE	14			0000098265			01	D									   0	   0	   0				  000											DEY2
+	X	100	DEY3	OE CPIC - Hendricks Logistik	DEY3	DEY3	EU01	03	DEY3	01	Goodyear Operations S.A.	Zum Frischemarkt 5		04158	Leipzig	EUM1				X	DE				0000098266			01	D									   0	   0	   0				  000											DEY3
+	X	100	DEY4	OE CPIC - Schedl Bremen	DEY4	DEY4	EU01	03	DEY4	01	Goodyear Operations S.A.	Europaallee 11		28309	Bremen-Hemelingen	EUM1				X	DE	04			0000098267			01	D									   0	   0	   0				  000											DEY4
+	X	100	DEY5	OE CPIC - Radsystem GmbH	DEY5	DEY5	EU01	03	DEY5	01	Goodyear Operations S.A.	Mercedesstraße 1, HPC 007I		76432	Rastatt	EUM1				X	DE	08			0000098268			01	D									   0	   0	   0				  000											DEY5
+	X	100	DEY6	OE CPIC - RABEN Trans European	DEY6	DEY6	EU01	03	DEY6	01	Goodyear Operations S.A.	Mühlhäuser Str. 141		99817	Eisenach	EUM1				X	DE	16			0000098269			01	D									   0	   0	   0				  000											DEY6
+	X	100	DEY7	OE CPIC - Reifen Gundlach GmbH	DEY7	DEY7	EU01	03	DEY7	01	Goodyear Dunlop Tires CPIC OE	Am Kohlenweg 1		56307	Daufenbach / Dürrholz	EUM1				X	DE	07			0000098270			01	D									   0	   0	   0				  000											DEY7
+	X	100	DEY8	OE CPIC - Ewals Köln	DEY8	DEY8	EU01	03	DEY8	01	Goodyear Operations S.A.	Hafenbecken III, Hansekai 38		50735	Köln	EUM1				X	DE	05			0000098271			01	D									   0	   0	   0				  000											DEY8
+	X	100	DEY9	OE CPIC - Astral Saarlouis	DEY9	DEY9	EU01	03	DEY9	01	Goodyear Operations S.A.	Carl-Zeiss-Strasse 33		66740	Saarlouis	EUM1				X	DE	10			0000098272			01	D									   0	   0	   0				  000											DEY9
+	X	100	DEYA	OE CPIC - Schedl Heilbronn	DEYA	DEYA	EU01	03	DEYA	01	Goodyear Operations S.A.	Salzstrasse 185		74076	Heilbronn	EUM1				X	DE	08			0005899582			01	D									   0	   0	   0				  000											DEYA
+	X	100	DEYB	OE CPIC - Spedition Dischinger	DEYB	DEYB	EU01	03	DEYB	01	Goodyear Operations S.A.	Calgary Avenue		77836	Rheinmünster	EUM1				X	DE	08			0009072800			01	D									   0	   0	   0				  000											DEYB
+	X	100	DEZ3	OE YRC Schenker	DEZ3	DEZ3	EU20	03	DEZ3	01	YOKOHAMA	Monaiserstr. 13-15		54294	Trier	EUM1				X	DE	07			0008959536			01	D									   0	   0	   0				  000											DEX3
+	X	100	DK01	CPIC - Glostrup	DK01	DK01	EU01	03	DK01	DK	Goodyear Operations S.A.	Steeng#rdsvej 26		4340	T#ll#se	EUM1				X	DK				0000772634			01	E									   0	   0	   0				  000							0001	X			DK01
+	X	100	DK40	CPIC - DK Motorsp. Event St.	DK40	DK40	EU01	03	DK40	ZU	Goodyear Operations S.A.					EUM1				X	DK				0000946129			01	E									   0	   0	   0				  000							0001	X			DK40
+	X	100	DK80	FOS - Denmark	DK80		EU01	03	DK80	DK	Goodyear Danmark A/S	Naverland 33-35		2600	Glostrup	DKF1					DK				0000772635			01	E							1		   0	   0	   0				  000
+	X	100	DK90	Purchasing - Denmark HQ	DK90					DK	Goodyear Danmark A/S	Universitetsvej 2		4000	Roskilde	DKP1				X	DK				0000772690				E							1		   0	   0	   0				  000
+	X	100	DKQ1	TPMS CPIC – DF Lagerhotel	DKQ1	DKQ1	EU01	03	DKQ1	DK	Goodyear Operations S.A.	Bredebjergvej 1		2630	Taastrup	EUM1				X	DK				0003608484			01	E									   0	   0	   0				  000											DKQ1
+	X	100	EE01	CPIC - Tallinn	EE01	EE01	EU01	03	EE01	ET	Goodyear Operations S.A.	Kanali tee 12a		10112	Tallinn	EUM1				X	EE				0000772636			01	E									   0	   0	   0				  000							0001	X			EE01
+	X	100	EE80	FOS - Estonia	EE80		EU01	03	EE80	EE	Goodyear Baltic OU	Betooni 6		11415	Tallinn	EEF1					EE				0000772637			01	E							1		   0	   0	   0				  000
+	X	100	EE90	EE N30 Tallinn Baltics Estonia	EE90					EE	Goodyear Baltic OU	Järvevana Tee 9		11314	Tallinn	EEP1					EE				0000772691				E							1		   0	   0	   0				  000
+	X	100	EG90	Egypt Head Office	EG90					W1	Goodyear Egypt LLC	Administrative Building No: 47			Cairo	EGP1					EG				0006714649				E									   0	   0	   0				  000
+	X	100	ES01	CPIC - ES Madrid Alcalá	ES01	ES01	EU01	03	ES01	ES	Goodyear Operations S.A.	Calle Francisco Rabal número 3		28806	Alcalá de Henares (Madrid	EUM1				X	ES				0000460256			01	E									   0	   0	   0				  000							0001	X			ES01
+	X	100	ES02	CPIC - ES XPO Marchamalo	ES02	ES02	EU01	03	ES02	ES	Goodyear Operations S.A.	El Ventorro 10-12		19180	Marchamalo	EUM1				X	ES	19			0007264264			01	E									   0	   0	   0				  000							0001	X			ES02
+	X	100	ES20	YRC ES Madrid Alcalá	ES20	ES20	EU20	03	ES20	ES	Yokohama	Calle Francisco Rabal número 3		28806	Alcalá de Henares (Madrid	EUM1				X	ES				0008959537			01	E									   0	   0	   0				  000							0001	X			ES01
+	X	100	ES40	CPIC - ES Motorsp. Event St.	ES40	ES40	EU01	03	ES40	ZU	Goodyear Operations S.A.					EUM1				X	ES				0000460257			01	E									   0	   0	   0				  000							0001	X			ES40
+	X	100	ES80	FOS - Spain	ES80	ES80	EU01	03	ES80	ES	Goodyear Tires España S.A.	P.I. Cointra/La Garena		28806	Alcalá de Henares.	ESF1					ES	28			0000596376			01	E							1		   0	   0	   0				  000
+	X	100	ES90	Purchasing - Spain HQ	ES90					ES	Goodyear Tires España S.A.	CL San Severo, 26-28		28042	Madrid	ESP1				X	ES	28			0000596377				E							1		   0	   0	   0				  000
+	X	100	ESQ1	TPMS CPIC -TRANSAHER Barcelona	ESQ1	ESQ1	EU01	03	ESQ1	ES	Goodyear Operations S.A.	C/ Casilla 4		08170	Montornes del Valles	EUM1				X	ES	08			0003765750			01	E									   0	   0	   0				  000											ESQ1
+	X	100	ESV1	NORAUTO ES ALMACÉN PLATAFORMA	ESV1	ESV1	EU01	03	ESV1	ES	Goodyear Operations S.A.	Extrarradio  Extrarradi 52		45224	SESEÑA NUEVO (Toledo)	EUM1				X	ES				0003109560			01	E									   0	   0	   0				  000							0001	X			ESV1
+	X	100	ESV2	VMI - Delticom-Guadalajara	ESV2	ESV2	EU01	03	ESV2	ES	Goodyear Operations S.A.	Avda. de Asia 6,		19290	Guadalajara	EUM1				X	ES	28			0006524401			01	E									   0	   0	   0				  000											ESV2
+	X	100	ESX1	OE CPIC - Eurotire España 2002	ESX1	ESX1	EU01	03	ESX1	ES	Goodyear Operations S.A.	Prado De San Anton		05759	Adanero-Avila	EUM1				X	ES				0000022724			01	E									   0	   0	   0				  000											ESX1
+	X	100	ESX2	OE CPIC - Michelin	ESX2	ESX2	EU01	03	ESX2	ES	Goodyear Operations S.A.	Avda Luis Mateos S/N		09400	Aranda de Duero Burgos	EUM1				X	ES	09			0000098273			01	E									   0	   0	   0				  000											ESX2
+	X	100	ESY1	OE CPIC - Enlog Figueruelas	ESY1	ESY1	EU01	03	ESY1	EX	Goodyear Operations S.A.	Ctra. de Logrono KM 27		50639	Figueruelas	EUM1				X	ES				0000098274			01	E									   0	   0	   0				  000											ESY1
+	X	100	ESY2	OE CPIC - Heredero Figueruelas	ESY2	ESY2	EU01	03	ESY2	ES	Goodyear Operations S.A.	Ctra. de Logrono KM 27,2		50639	Figueruelas	EUM1				X	ES				0000098275			01	E									   0	   0	   0				  000											ESY2
+	X	100	ESY3	OE CPIC - Neumaticos Iruna	ESY3	ESY3	EU01	03	ESY3	ES	Goodyear Operations S.A.	Calle 2, Parcela 4		31860	Irurtzun-Navarra	EUM1				X	ES				0000098276			01	E									   0	   0	   0				  000											ESY3
+	X	100	ESY4	OE CPIC - Lamentron Valladolid	ESY4	ESY4	EU01	03	ESY4	ES	Goodyear Operations S.A.	Pol. Ind. San Cristobal		47012	Valladolid	EUM1				X	ES				0000098277			01	E									   0	   0	   0				  000											ESY4
+	X	100	ESY5	OE CPIC - Trire Odena	ESY5	ESY5	EU01	03	ESY5	ES	Goodyear Operations S.A.	Carretera Nacional II km 556,5		08711	Odena	EUM1				X	ES				0000098278			01	E									   0	   0	   0				  000											ESY5
+	X	100	ESY6	OE CPIC - Megatrans Ribarroja	ESY6	ESY6	EU01	03	ESY6	ES	Goodyear Operations S.A.	Polígono Industrial Casanova		46394	Riba-Roja del Turia (Vale	EUM1				X	ES				0000098279			01	E									   0	   0	   0				  000											ESY6
+	X	100	ESY7	OE CPIC - Neumaticos Almazan	ESY7	ESY7	EU01	03	ESY7	ES	Goodyear Operations S.A.	C/ Mina Maravilla 1		23700	Linares (Jaén)	EUM1				X	ES				0000098280			01	E									   0	   0	   0				  000											ESY7
+	X	100	EU80	FOS Truck Virtual Plant	EU80	EU80	EU01	03	EU80	LU	Goodyear Operations S.A.	Avenue Gordon Smith		7750	Colmar-Berg	EUF1					LU				0000022725	EU80		01	E							1		   0	   0	   0				  000
+	X	100	EU81	XPO Fitting Locations FR	EU81		EU01	03	EU81	FR		Tour First, 1 place des Saison		92400	Courbevoie Paris La Défen	EUF1					FR				0006574388	EU80		01	E							1		   0	   0	   0				  000											EU81
+	X	100	EU82	Proactive CPIC	EU82					01	Goodyear Operations S.A.	Halterner Str. 195		46284	Dorsten	EUF2					DE				0005899575				E									   0	   0	   0				  000
+	X	100	EU83	Ecommerce CPIC	EU83		EU01	03		LU	Goodyear Operations S.A.	Avenue Gordon Smith		7750	Colmar-Berg	EUF1					LU				0006060462	EU80		01	E							1		   0	   0	   0				  000
+	X	100	EU85	TAAS CPIC	EU85		EU04	11		LU	Goodyear Operations S.A.	Avenue Gordon Smith		7750	Colmar-Berg	EUT1					LU				0008305435			01	E									   0	   0	   0				  000
+	X	100	EU90	FOS Indirect Virtual Plant	EU90	EU90	EU90	11		LU	Goodyear Operations S.A.	Avenue Gordon Smith		7750	Colmar-Berg	EUF1					LU				0004616125	EU80		01	E							1		   0	   0	   0				  000
+	X	100	EU91	CPIC - Dublin	EU91					GW	Goodyear Operations S.A.	Unit 20, Fonthill Industrial P		22	DUBLIN	EUP3				X	IE				0004798524				E							1		   0	   0	   0				  000
+	X	100	EU92	B2C Virtual Plant	EU92		EU90	11		LU	Goodyear Operations S.A.	Avenue Gordon Smith		7750	Colmar-Berg	EUF3					LU				0007780098	EU80		01	E							1		   0	   0	   0				  000
+	X	100	EUMX	EU External Compound Planning	EUMX					LU	Goodyear S.A.	Avenue Gordon Smith		7750	Colmar-Berg					X	LU				0001022288				E									   0	   0	   0				  000							0001		X
+	X	100	FI01	CPIC - Kouvola	FI01	FI01	EU01	03	FI01	FH	Goodyear Operations S.A.	Tehontie 10 C		45200	Kouvola	EUM1				X	FI				0000772638			01	E									   0	   0	   0				  000							0001	X			FI01
+	X	100	FI20	YRC Kouvola	FI20	FI20	EU20	03	FI20	FH	YOKOHAMA	Tehontie 10 C		45200	Kouvola	EUM1				X	FI				0008993527			01	E									   0	   0	   0				  000							0001	X			FI01
+	X	100	FI40	CPIC - FI Motorsp. Event St.	FI40	FI40	EU01	03	FI40	ZU	Goodyear Operations S.A.					EUM1				X	FI				0000946130			01	E									   0	   0	   0				  000							0001	X			FI40
+	X	100	FI80	FOS - Finland	FI80		EU01	03	FI80	FI	Goodyear Finland Oy	Liukumäentie 15		00640	Helsinki	FIF1					FI				0000772639			01	E							1		   0	   0	   0				  000
+	X	100	FI90	Purchasing - Finland HQ	FI90					FI	Goodyear Finland Oy	Lampputie 2		00740	Helsinki	FIP1				X	FI				0000772692				E							1		   0	   0	   0				  000
+	X	100	FR01	CPIC - Lieusaint	FR01	FR01	EU01	03	FR01	FR	Goodyear Operations S.A.	2 Boulevard d'Espagne		77127	Lieusaint	EUM1				X	FR				0000354213			01	E									   0	   0	   0				  000											FR02
+	X	100	FR02	CPIC - Amiens North	FR02	FR02	EU01	03	FR02	FR	Goodyear Operations S.A.	ZI DE LONGPRE LES AMIENS	1339	80013	Amiens	EUM1				X	FR				0000022726			01	E									   0	   0	   0				  000											FR02
+	X	100	FR03	BTL Logistique	FR03	FR03	EU01	03	FR03	FR		17 Rue de Demuin		80800	Villers-Bretonneux	EUM1				X	FR				0000022727			01	E									   0	   0	   0				  000							0001	X			FR03
+	X	100	FR04	CPIC - Riom	FR04	FR04	EU01	03	FR04	F4	Goodyear Operations S.A.	49 Route d' Ennezat		63204	RIOM CEDEX	EUM1				X	FR				0000354214			01	E									   0	   0	   0				  000											FR02
+	X	100	FR05	CPIC - Montluçon	FR05	FR05	EU01	03	FR05	FR	Goodyear Operations S.A.	Rue de Pasquis	3246	03106	Montluçon	EUM1				X	FR				0000022728			01	E									   0	   0	   0				  000							0001	X			FR05
+	X	100	FR06	CPIC - Amiens South Overflow	FR06	FR06	EU01	03	FR06	FR	Goodyear Operations S.A.	Rue Roger Dumoulin	1337	80013	Amiens	EUM1				X	FR				0000022729			01	E									   0	   0	   0				  000											FR03
+	X	100	FR07	CPIC - St WITZ	FR07	FR07	EU01	03	FR07	FR	Goodyear Operations S.A.	4, avenue de la Pépinière		95470	Saint WITZ	EUM1				X	FR				0003608473			01	E									   0	   0	   0				  000											FR07
+	X	100	FR09	CPIC - CTM	FR09	FR09	EU01	03	FR09	FR	Goodyear Operations S.A.	ROUTE NATIONALE		80800	LAMOTTE WARFUSEE	EUM1				X	FR				0000354215			01	E									   0	   0	   0				  000											FR02
+	X	100	FR13	CPIC - MARSEILLE	FR13	FR13	EU01	03	FR13	FS	Goodyear Operations S.A.	4 Avenue Ferdinand Magellan		13140	Miramas	EUM1				X	FR				0005899579			01	E									   0	   0	   0				  000											FR13
+	X	100	FR20	YRC Amiens	FR20	FR20	EU20	03	FR20	FR	YOKOHAMA	80 avenue Roger Dumoulin		80000	Amiens	EUM1				X	FR				0008993528			01	E									   0	   0	   0				  000											FR79
+	X	100	FR2A	Pneus Gern SARL	FR2A	FR2A	EU01	03		01	Goodyear Operations S.A.	Zoning Industriel		68490	Hombourg	EUP1					FR				0008581144			01	E									   0	   0	   0				  000											FR2A
+	X	100	FR40	CPIC - FR Motorsport	FR40	FR40	EU01	03	FR40	FR	Goodyear Operations S.A.	ZAC  de  Pasquis		03100	Montlucon	EUM1				X	FR				0000498989			01	E									   0	   0	   0				  000							0001	X			FR40
+	X	100	FR60	Goodyear Aviation Tires LDVA	FR60	FR60	NL20	10	FR60	FR	Aviation EMEA	AV DE LA PEPINIERE		95470	ST WITZ	NLA1				X	FR	930			0001575050			01	E									   0	   0	   0				  000							0001	X			FR60
+	X	100	FR61	Goodyear Aviation Tires	FR61	FR61	NL20	10	FR61	FR	Aviation EMEA	4 / 6 RUE AMPERE		95500	GONESSE	NLA1				X	FR	950			0001575051			01	E									   0	   0	   0				  000							0001	X			FR61
+	X	100	FR73	CPIC - Chrome Amiens	FR73	FR73	EU01	03	FR73	FR	Goodyear Operations S.A.	80 avenue Roger Dumoulin		80000	Amiens	EUM1				X	FR				0008029271			01	E									   0	   0	   0				  000											FR79
+	X	100	FR79	CPIC - Amiens	FR79	FR79	EU01	03	FR79	FR	Goodyear Operations S.A.	80 avenue Roger Dumoulin		80000	Amiens	EUM1				X	FR				0007910913			01	E									   0	   0	   0				  000							0001	X			FR79
+	X	100	FR80	FOS - France	FR80	FR80	FR01	03	FR80	FR	Goodyear France	30 Avenue Roger Dumoulin		80080	Amiens	FRF1					FR				0000354216			01	E							1		   0	   0	   0				  000											FR80
+	X	100	FR90	Purchasing - France HQ	FR90					BE	Goodyear France	Tour First, 1 place des Saison		92400	Courbevoie Paris La Défen	FRP1					FR				0000177615				F							1		   0	   0	   0				  000
+	X	100	FR91	Purchasing - France	FR91					FR	Goodyear France	Tour First, 1 place des Saison		92400	Courbevoie Paris La Défen	FRP3					FR				0000354217				F									   0	   0	   0				  000
+	X	100	FR92	Vulco Truck Services	FR92					BE		1 place des Saisons		92400	Courbevoie	FRP1					FR				0006819051				F							1		   0	   0	   0				  000
+	X	100	FR93	SNELLA Auto	FR93					BE		1 place des Saisons		92400	Courbevoie	FRP1					FR				0006819052				F							1		   0	   0	   0				  000
+	X	100	FR94	GP Pneus	FR94					BE		225 Rue de la Peyennière		53100	Mayenne	FRP1					FR				0009607933				F							1		   0	   0	   0				  000
+	X	100	FRA1	CPIC Manufact. - Amiens Sud	FRA1	FRA1	EU01	03	FRA1	F1	Goodyear Operations S.A.	60 Avenue Roger Dumoulin		80084	Amiens	EUP1				X	FR				0000177616			01	F									   0	   0	   0				  000
+	X	100	FRAN	Usine d´Amiens	FRAN	FRAN	FR01	03	FRAN	F1	Goodyear France	30 av Roger Dumoulin	1337	80013	Amiens	FRP1				X	FR				0000086679	FRAN		01	F									   0	   0	   0				  000
+	X	100	FRF1	CPIC Manufact. - Amiens Nord	FRF1	FRF1	EU01	03	FRF1	FR	Goodyear Operations S.A.	80 av Roger Dumoulin		80084	Amiens cedex 2	EUP1				X	FR				0000177617			01	F									   0	   0	   0				  000
+	X	100	FRFR	Usine Amiens Nord (Goodyear)	FRFR	FRFR	FR01	03	FRFR	F1	Goodyear France	80 av Roger Dumoulin		80084	Amiens cedex 2	FRP1				X	FR				0000086680	FRFR		01	F									   0	   0	   0				  000							0001	X	X
+	X	100	FRM1	CPIC Manufact. - Montlucon	FRM1	FRM1	EU01	03	FRM1	F1	Goodyear Operations S.A.	1 Zac de Pasquis		03106	Montlucon Cedex	EUP1				X	FR				0000177618			01	F									   0	   0	   0				  000
+	X	100	FRML	Usine de Montluçon	FRML	FRML	FR01	03	FRML	F1	Goodyear France	1 zac de Pasquis		03106	Montlucon Cedex	FRP1				X	FR				0000086681	FRML		01	F									   0	   0	   0				  000							0001	X	X
+	X	100	FRQ1	TPMS CPIC - DLS Lyon	FRQ1	FRQ1	EU01	03	FRQ1	FR	Goodyear Operations S.A.	5, Rue Jacques de Vaucason		69780	MIONS	EUM1				X	FR				0003608487			01	E									   0	   0	   0				  000											FRQ1
+	X	100	FRR1	CPIC Manufact. - Riom	FRR1	FRR1	EU01	03	FRR1	FR	Goodyear Operations S.A.	49 rte Ennezat		63204	Riom	EUP1				X	FR				0000177619			01	F									   0	   0	   0				  000
+	X	100	FRRD	France Development	FRRD					FR	Goodyear R&D France	Rue de Pasquis		03100	MONTLUCON	DEP2					FR				0000431197				F									   0	   0	   0				  000
+	X	100	FRRM	Usine de Riom	FRRM	FRRM	FR01	03	FRRM	F1	Goodyear France	49 rte Ennezat		63204	Riom	FRP1				X	FR				0000086682			01	F									   0	   0	   0				  000							0001	X
+	X	100	FRV1	VMI - Magasin-Beaune	FRV1	FRV1	EU01	03	FRV1	FR	Goodyear Operations S.A.	RUE ANDRE GAGEY BAT A		21200	BEAUNE	EUM1				X	FR	21R			0003109561			01	E									   0	   0	   0				  000											FRV1
+	X	100	FRV2	VMI - M2S-MEUNG/LOIRE	FRV2	FRV2	EU01	03	FRV2	FR	Goodyear Operations S.A.	460, 9ème Avenue		45130	MEUNG-SUR-LOIRE	EUM1				X	FR				0003109562			01	E									   0	   0	   0				  000											FRV2
+	X	100	FRV3	VMI - ATYSE-LYON	FRV3	FRV3	EU01	03	FRV3	FR	Goodyear Operations S.A.	Atyse GEIE		69780	TOUSSIEU	EUM1				X	FR				0003109563			01	E									   0	   0	   0				  000											FRV3
+	X	100	FRV4	VMI - Allopneu-Valence	FRV4	FRV4	EU01	03	FRV4	FR	Goodyear Operations S.A.	rue de la condamine		26000	Valence	EUM1				X	FR	26R			0006524402			01	E									   0	   0	   0				  000											FRV4
+	X	100	FRV5	VMI - Delticom-Ensisheim	FRV5	FRV5	EU01	03	FRV5	FQ	Goodyear Operations S.A.	1 RUE DU SCHORFELD		68190	ENSISHEIM	EUM1				X	FR	68			0006524403			01	E									   0	   0	   0				  000											FRV5
+	X	100	FRX1	OE CPIC - Michelin Bourges	FRX1	FRX1	EU01	03		FR	Goodyear Operations S.A.	Rue du Paradis		18230	Saint Doulchard	EUM1				X	FR	18			0008581140			01	F									   0	   0	   0				  000											FRX1
+	X	100	FRY1	OE CPIC - Simastock Onnaing	FRY1	FRY1	EU01	03	FRY1	FR	Goodyear Operations S.A.	Parc d'activité de la Valée		59264	Onnaing	EUM1				X	FR				0000098281			01	F									   0	   0	   0				  000											FRY1
+	X	100	FRY2	OE CPIC - MC Syncro Onnaing	FRY2	FRY2	EU01	03	FRY2	FR	Goodyear Operations S.A.	Parc d'activite de la vallee l		59264	Onnaing	EUM1				X	FR				0000098282			01	F									   0	   0	   0				  000											FRY2
+	X	100	FRY3	OE CPIC - PERRENOT Belfort Mon	FRY3	FRY3	EU01	03	FRY3	FX	Goodyear Operations S.A.	8 rue Georges Boillot, ZI Char		25200	Montbéliard	EUM1				X	FR				0000098283			01	F									   0	   0	   0				  000											FRY3
+	X	100	FRY4	OE CPIC - Radsystem Hambach SA	FRY4	FRY4	EU01	03	FRY4	FR	Goodyear Operations S.A.	ZA Europole de Sarreguemines		57910	Hambach	EUM1				X	FR				0000098284			01	F									   0	   0	   0				  000											FRY4
+	X	100	FRY5	OE CPIC - PTS DUFOUR	FRY5	FRY5	EU01	03	FRY5	FR	Goodyear Operations S.A.	1 Avenue		76170	ST JEAN DE FOLLEVILLE	EUM1				X	FR	76			0000098285			01	F									   0	   0	   0				  000											FRY5
+	X	100	FRY6	OE CPIC - Simastock Brebieres	FRY6	FRY6	EU01	03	FRY6	FR	Goodyear Operations S.A.	Route d’Arras		59552	Lambres-Lez-Douai	EUM1				X	FR				0000098286			01	F									   0	   0	   0				  000											FRY6
+	X	100	FRY7	OE CPIC - Simastock Direct	FRY7	FRY7	EU01	03	FRY7	FR	Goodyear Operations S.A.	Route d’Arras		59552	Lambres-Lez-Douai	EUM1				X	FR				0002835869			01	F									   0	   0	   0				  000											FRY7
+	X	100	FRZ1	OE YRC Michelin centre	FRZ1	FRZ1	EU20	03	FRZ1	FR	YOKOHAMA	Rue du Paradis		18230	Saint Doulchard	EUM1				X	FR	18			0008959538			01	F									   0	   0	   0				  000											FRX1
+	X	100	FSAN	Usine d´Amiens	FSAN	FSAN	FR02	03	FSAN	F1	Goodyear France	30 av Roger Dumoulin	1337	80013	Amiens	FRP2				X	FR				0000086683	FSAN		01	F									   0	   0	   0				  000							0001	X	X
+	X	100	GB01	CPIC - DHL ISC	GB01	GB01	EU01	03	GB01	GY	Goodyear Operations S.A.	3310 Hunter Boulevard		LE17 4XN	Lutterworth	EUM1				X	GB	LE			0000354218			01	E									   0	   0	   0				  000							0001	X			GB01
+	X	100	GB02	CPIC - Motorsport	GB02	GB02	EU01	03	GB02	ZU	Goodyear Operations S.A.	5 Broad March		NN11 4HE	Daventry	EUM1				X	GB				0000354219			01	E									   0	   0	   0				  000							0001	X			GB02
+	X	100	GB03	CPIC - Motorsport Event Stocks	GB03	GB03	EU01	03	GB03	ZU	Goodyear Operations S.A.	5 Broad March		NN11 4HE	Daventry	EUM1				X	GB				0000354220			01	E									   0	   0	   0				  000							0001	X			GB03
+	X	100	GB04	CPIC - TRS TYRES	GB04	GB04	EU01	03	GB04	GY	Goodyear Operations S.A.	White Lund Industrial Estate		LA3 3DB	Morecambe, Lancashire	EUM1				X	GB				0000354221			01	E							1		   0	   0	   0				  000							0001	X			GB04
+	X	100	GB07	CPIC - Swindon	GB07	GB07	EU01	03	GB07	GY	Goodyear Operations S.A.	The Spectrum Building		SN5 7UT	Swindon	EUM1				X	GB	WI			0007264265			01	E									   0	   0	   0				  000							0001	X			GB07
+	X	100	GB08	Ascott Transport Limited	GB08	GB08	EU01	03	GB08	GY	Goodyear Operations S.A.	Brunthill Road		CA3 0EH	Carlisle	EUM1				X	GB	CU			0007264266			01	E									   0	   0	   0				  000							0001	X			GB08
+	X	100	GB09	CPIC - Melksham Motorsport	GB09	GB09	EU01	03	GB09	GM	Goodyear Operations S.A.	Bath Road		SN12 8AA	Melksham	EUM1				X	GB	WI			0007375685			01	E									   0	   0	   0				  000							0001	X			GB09
+	X	100	GB20	YRC TRS TYRES	GB20	GB20	EU20	03	GB20	GY	YOKOHAMA	White Lund Industrial Estate		LA3 3DB	Morecambe, Lancashire	EUM1				X	GB				0008959539			01	E							1		   0	   0	   0				  000							0001	X			GB04
+	X	100	GB2A	TRS Tyres Ltd	GB2A	GB2A	EU01	03		01	Goodyear Operations S.A.	Whitegate		LA3 3BS	Morecambe	EUP1					GB				0008581145			01	E									   0	   0	   0				  000											GB2A
+	X	100	GB60	Ascott Transport Limited	GB60	GB60	NL20	10	GB60	GB	Aviation EMEA	Woodyard Lane		DE65 5DJ	Foston	NLA1				X	GB	DB			0000431198			01	E									   0	   0	   0				  000							0001	X			GB60
+	X	100	GB80	FOS - Great Britain	GB80		EU01	03		GB	Goodyear Tyres UK Limited	TyreFort, 88-98 Wingfoot Way		B24 9HY	Birmingham	GBF1					GB				0000354222			01	E							1		   0	   0	   0				  000
+	X	100	GB90	Purchasing - UK Head Office	GB90					GW	Goodyear Tyres UK Limited	2920 Trident Court		B37 7YN	Birmingham	GBP1				X	GB				0000354223				E							1		   0	   0	   0				  000
+	X	100	GB91	Purchasing - UK GHQ	GB91					GW	Goodyear Tyres UK Limited	2920 TRIDENT COURT		B37 7YN	BIRMINGHAM BUSINESS PARK					X	GB				0000431199				E									   0	   0	   0				  000
+	X	100	GB92	Easy Autocentres Limited	GB92					GW	Goodyear Tyres UK Limited	2920 Trident Court		B37 7YN	Birmingham	GBP1				X	GB				0006819053				E							1		   0	   0	   0				  000
+	X	100	GB93	UK Tyres & Lubricants Ltd	GB93					GW	Goodyear Tyres UK Limited	2920 Trident Court		B37 7YN	Birmingham	GBP1				X	GB				0006819054				E							1		   0	   0	   0				  000
+	X	100	GB94	Weeting Tyres Limited	GB94					GW	Goodyear Tyres UK Limited	2920 Trident Court		B37 7YN	Birmingham	GBP1				X	GB				0007264298				E							1		   0	   0	   0				  000
+	X	100	GB95	HiQ Holdings Limited	GB95					GW	Goodyear Tyres UK Limited	2920 Trident Court		B37 7YN	Birmingham	GBP1				X	GB				0007264299				E							1		   0	   0	   0				  000
+	X	100	GBB1	CPIC Manufact. - Birmingham	GBB1	GBB1	EU01	03	GBB1	ZU	Goodyear Operations S.A.	Off Spitfire Road		B24 9QT	Birmingham	EUP1				X	GB				0000086684			01	E									   0	   0	   0				  000
+	X	100	GBBI	UK Tire Plant Birmingham	GBBI	GBBI	GB01	03	GBBI	GW	Goodyear Tyres UK Limited	Entrance Off Spitfire Way		B24 9QT	Birmingham	GBP1				X	GB				0000086685	GBBI		01	E									   0	   0	   0				  000							0001	X	X
+	X	100	GBE1	CPIC Manufact. - Wolverhampton	GBE1	GBE1	EU01	03	GBE1	GW	Goodyear Operations S.A.	Bushbury Lane		WV10 9TT	Wolverhampton	EUP1				X	GB				0000086686			01	E									   0	   0	   0				  000
+	X	100	GBEN	UK Compounding Wolverhampton	GBEN	GBEN	GB01	03	GBEN	GW	Goodyear Tyres UK Limited	Busbury Lane		WV10 9TT	Wolverhampton	GBP1				X	GB				0000037255	GBEN		01	E									   0	   0	   0				  000							0001		X
+	X	100	GBM1	CPIC Manufact. - Melksham	GBM1	GBM1	EU01	03	GBM1	ZU	Goodyear Operations S.A.	Bath Road		SN12 8AA	Melksham	EUP1				X	GB	WI			0007264267			01	E									   0	   0	   0				  000
+	X	100	GBME	UK Tire Plant Melksham	GBME	GBME	GB02	03	GBME	GW	Cooper Tyre & Rubber Co.	Bath Road		SN12 8AA	Melksham	GBP2				X	GB	WI			0007264268	GBME		01	E									   0	   0	   0				  000							0001	X	X
+	X	100	GBR1	CPIC Manufact. - Retread Wolv.	GBR1	GBR1	EU01	03	GBR1	GB	Goodyear Operations S.A.	Bushbury Lane		WV10 6DH	Wolverhampton	EUP1				X	GB				0000177620			01	E									   0	   0	   0				  000
+	X	100	GBRD	Great Britain Development	GBRD					GB	Goodyear R&D Great Britain					DEP2					GB				0000431200				E									   0	   0	   0				  000
+	X	100	GBRT	UK Retread Wolverhampton	GBRT	GBRT	GB01	03	GBRT	GB	Goodyear Tyres UK Limited	Bushbury Lane		WV10 6DH	Wolverhampton	GBP1				X	GB				0000177621	GBRT		01	E									   0	   0	   0				  000							0001	X
+	X	100	GBV1	VMI - Delticom-Cradley Heath	GBV1	GBV1	EU01	03	GBV1	GB	Goodyear Operations S.A.	Central Avenue, Unit 6		B64 7BY	Cradley Heath	EUM1				X	GB	WM			0006616460			01	E									   0	   0	   0				  000											GBV1
+	X	100	GBX1	OE CPIC - Montracon, Doncaster	GBX1	GBX1	EU01	03	GBX1	GB	Goodyear Operations S.A.	Carr Hill		DN4 8DE	Doncaster	EUM1				X	GB	YS			0000022730			01	E									   0	   0	   0				  000											GBX1
+	X	100	GBX2	OE CPIC - Caterpillar Peterlee	GBX2	GBX2	EU01	03	GBX2	GB	Goodyear Operations S.A.	3 Cook Way - North West Ind. E		SR8 2HY	Peterlee	EUM1				X	GB				0000022731			01	E									   0	   0	   0				  000											GBX2
+	X	100	GBX3	OE CPIC - JCB	GBX3	GBX3	EU01	03	GBX3	GB	Goodyear Operations S.A.	Unit 3/4 Lymedale Cross Ind Es		ST5 9BT	Lower Milehouse Lane	EUM1				X	GB				0000098287			01	E									   0	   0	   0				  000											GBX3
+	X	100	GBX4	OE CPIC - CAT	GBX4	GBX4	EU01	03	GBX4	GB	Goodyear Operations S.A.	Building 17A Caterpillar UK Lt		LE9 9JT	Desford	EUM1				X	GB	LE			0000098288			01	E									   0	   0	   0				  000											GBX4
+	X	100	GBY1	OE CPIC - Fergusons Washington	GBY1	GBY1	EU01	03	GBY1	ZU	Goodyear Operations S.A.	Barmston Lane, Pattinson Ind.		NE38 8QT	Washington	EUM1				X	GB	TW			0000098289			01	E									   0	   0	   0				  000											GBY1
+	X	100	GBY2	OE CPIC - TTAS C. Donington	GBY2	GBY2	EU01	03	GBY2	GB	Goodyear Operations S.A.	Warke Flatt, Willow Farm Busin		DE74 2UD	Castle Donington	EUM1				X	GB				0000098290			01	E									   0	   0	   0				  000											GBY2
+	X	100	GBY3	OE CPIC - Fergusons UNIT1	GBY3	GBY3	EU01	03	GBY3	GB	Goodyear Operations S.A.	NORTHUMBERLAND BUSINESS PARK W		NE23 7RH	CRAMLINGTON	EUM1				X	GB				0000098291			01	E									   0	   0	   0				  000											GBY3
+	X	100	GBY4	OE CPIC - Nissin Swindon	GBY4	GBY4	EU01	03	GBY4	ZU	Goodyear Operations S.A.	Unit 10 B&C, Spitfire Way		SN3 4AQ	Swindon, Wilts	EUM1				X	GB				0000098292			01	E									   0	   0	   0				  000											GBY4
+	X	100	GBY5	OE CPIC - Roberts Eastleigh	GBY5	GBY5	EU01	03	GBY5	GB	Goodyear Operations S.A.	Tower Lane Industrial Estate		SO50 6NZ	Eastleigh	EUM1				X	GB				0000098293			01	E									   0	   0	   0				  000											GBY5
+	X	100	GR01	CPIC - Athens	GR01	GR01	EU01	03	GR01	GA	Goodyear Operations S.A.	LEKKA ELEFSINA		192 00	ELEFSINA – ATTICA	EUM1				X	GR				0000596378			01	E									   0	   0	   0				  000											GR01
+	X	100	GR20	YRC Athens	GR20	GR20	EU20	03	GR20	GA	YOKOHAMA	LEKKA ELEFSINA		192 00	ELEFSINA – ATTICA	EUM1				X	GR				0008959540			01	E									   0	   0	   0				  000											GR01
+	X	100	GR80	FOS - Greece	GR80	GR80	EU01	03	GR80	GR	Goodyear Hellas S.A.I.C.	Industrial Area of Sindos		570 22	Thessaloniki	GRF1					GR				0000596379			01	E							1		   0	   0	   0				  000											GR01
+	X	100	GR90	Purchasing - Greece HQ	GR90					GR	Goodyear Hellas S.A.I.C.	L.Katsoni & Ipirou 69		135 62	Athens	GRP1				X	GR				0000596380				E							1		   0	   0	   0				  000
+	X	100	HR80	FOS - Croatia	HR80		EU01	03		SI	Goodyear Slovenija, d. o. o.	Škofjeloška c. 6		4000	Kranj	HRF1					HR				0006298440			01	E							1		   0	   0	   0				  000
+	X	100	HU01	CPIC - Törökbálint	HU01	HU01	EU01	03	HU01	HU	Goodyear Operations S.A.	Tó Park		2045	Törökbálint	EUM1				X	HU				0000772640			01	E									   0	   0	   0				  000							0001	X			HU01
+	X	100	HU40	CPIC - HU Motorsp. Event St.	HU40	HU40	EU01	03	HU40	ZU	Goodyear Operations S.A.					EUM1				X	HU				0000946131			01	E									   0	   0	   0				  000							0001	X			HU40
+	X	100	HU80	FOS - Hungary	HU80		EU01	03	HU80	HU	Goodyear Hungary Kft	Tó Park		2045	Törökbálint	HUF1					HU				0000772641			01	E							1		   0	   0	   0				  000
+	X	100	HU90	Purchasing - Hungary HQ	HU90					HU	Goodyear Hungary Kft	Rakoczi ut  70-72	980	1074	Budapest	HUP1				X	HU				0000772693				E							1		   0	   0	   0				  000
+	X	100	HUY1	OE CPIC - Schedl Hungaria Kft.	HUY1	HUY1	EU01	03	HUY1	HU	Goodyear Operations S.A.	Csonka Janos utca 4		6000	Kecskemét	EUM1				X	HU				0001120431			01	E									   0	   0	   0				  000											HUY1
+	X	100	HUY2	OE CPIC - Kuehne+Nagel Kecsk.	HUY2	HUY2	EU01	03	HUY2	HU	Goodyear Operations S.A.	Daimler út 6.		6000	Kecskemét	EUM1				X	HU				0002526857			01	E									   0	   0	   0				  000											HUY2
+	X	100	HUY3	OE CPIC - PTG Europe	HUY3	HUY3	EU01	03	HUY3	HU	Goodyear Operations S.A.	Platánfa u. 3		9027	Gyõr	EUM1				X	HU				0003287191			01	E									   0	   0	   0				  000											HUY3
+	X	100	IDIO	ID IDIO Bogor production	IDIO					ID	PT Goodyear Indonesia	P O Box 5, J1 Pemuda 27	5	16161	Bogor, West Java					X	ID				0000339569				E									   0	   0	   0				  000
+	X	100	IE01	CPIC - Dublin	IE01	IE01	EU01	03	IE01	IE	Goodyear Operations S.A.	Unit 20, Fonthill Industrial P		22	Dublin	EUM1				X	IE				0000354224			01	E									   0	   0	   0				  000							0001	X			IE01
+	X	100	IE02	CPIC - Waterford	IE02	IE02	EU01	03	IE02	GB	Goodyear Operations S.A.	Abbey Road, Ferrybank			Waterford	EUM1				X	IE				0000354225			01	E									   0	   0	   0				  000							0001	X			IE02
+	X	100	IE40	CPIC - IE Motorsp. Event St.	IE40	IE40	EU01	03		ZU	Goodyear Operations S.A.					EUM1					IE				0001680930			01	E									   0	   0	   0				  000											IE40
+	X	100	IE80	FOS - Irland	IE80		EU01	03		GB	Goodyear Ireland Limited	Lower Hatch Street		22	Dublin 2	IEF1					IE				0000354226			01	E							1		   0	   0	   0				  000
+	X	100	IE90	Purchasing - Ireland HO	IE90					IE	Goodyear Ireland Limited	Lower Hatch Street		22	Dublin 2	IEP1					IE				0000177622				E							1		   0	   0	   0				  000
+	X	100	ININ	Goodyear Ballabgarh	ININ					IN	Godyear lndia Ltd. Factory	Faridabad District,  State of		121004	Ballabgarh					X	IN				0000086687				E									   0	   0	   0				  000
+	X	100	INST	Goodyear Aurangabad	INST					IN	Goodyear South Asia Tyres Pvt	Plt #H-18 Phase III, MIDC Indu		431136	Aurangabad,					X	IN				0000086688				E									   0	   0	   0				  000
+	X	100	IT01	CPIC - Novara S.Pietro	IT01	IT01	EU01	03	IT01	IW	Goodyear Operations S.A.	VIA DELL'INDUSTRIA  N.2		28060	S.PIETRO MOSEZZO	EUM1				X	IT	NO			0000596381			01	E									   0	   0	   0				  000											IT01
+	X	100	IT03	CPIC - Aprilia	IT03	IT03	EU01	03	IT03	IW	Goodyear Operations S.A.	S.S. 148 (Pontina) km. 44,400		04011	APRILIA	EUM1				X	IT	LT			0000596382			01	E									   0	   0	   0				  000											IT03
+	X	100	IT05	CPIC - Marangoni S.P.A.	IT05	IT05	EU01	03	IT05	IW	Goodyear Operations S.A.	Strada Comunale ASI1/S, 10-14		03013	Ferentino	EUM1					IT	FR			0008781906			01	E									   0	   0	   0				  000											IT05
+	X	100	IT40	CPIC - IT Motorsp. Event St.	IT40	IT40	EU01	03	IT40	ZU	Goodyear Operations S.A.					EUM1				X	IT				0000522875			01	E									   0	   0	   0				  000							0001	X			IT40
+	X	100	IT70	Goodyear Italiana S.p.A	IT70					IT	Goodyear Italiana S.p.A	Milanofiori, Strada 4, Palazzo		20090	Assago (MI)	ITP2					IT	MI			0006410129				I									   0	   0	   0				  000
+	X	100	IT80	FOS - Italy	IT80	IT80	EU01	03	IT80	IT	Goodyear Italia S.p.A	Via Bartolino da Novara 8		28100	Novara	ITF1					IT	NO			0000596383			01	E							1		   0	   0	   0				  000
+	X	100	IT90	Purchasing - Fiumicino HO	IT90					IT	Goodyear Italia S.p.A	Viale delle Arti 151		00054	Fiumicino	ITP1				X	IT	RM			0000596384				E							1		   0	   0	   0				  000
+	X	100	IT91	Purchasing - Assago HO	IT91					IT	Goodyear Italia S.p.A	Centro Direzionale Milanofiori		20057	Assago (MI)	ITP1				X	IT				0000596385				E									   0	   0	   0				  000
+	X	100	ITV1	VMI - Fintyre-Seriate	ITV1	ITV1	EU01	03	ITV1	IT	Goodyear Operations S.A.	Cascina Bruciata 7		24068	SERIATE	EUM1					IT	BG			0008827249			01	E									   0	   0	   0				  000											ITV1
+	X	100	ITX1	OE CPIC - Eurotire SRL	ITX1	ITX1	EU01	03	ITX1	IT	Goodyear Operations S.A.	Via V.Tobagi SNC		46040	Casaloldo	EUM1				X	IT				0000022732			01	E									   0	   0	   0				  000											ITX1
+	X	100	ITY1	OE CPIC - Saima Avandero	ITY1	ITY1	EU01	03	ITY1	IT	Goodyear Operations S.A.	Via Dell'industria 2		28060	S. Pietro Mosezzo	EUM1				X	IT	NO			0000098294			01	E									   0	   0	   0				  000											ITY1
+	X	100	ITY2	OE CPIC - HTL Grugliasco	ITY2	ITY2	EU01	03	ITY2	IT	Goodyear Operations S.A.	Via della Libertà 30		10095	Grugliasco	EUM1				X	IT	TO			0000177623			01	E									   0	   0	   0				  000											ITX1
+	X	100	ITY3	OE CPIC - HTL Melfi	ITY3	ITY3	EU01	03	ITY3	IT	Goodyear Operations S.A.	Zona industriale S. Nicola Str		85025	Melfi	EUM1				X	IT	PZ			0000177624			01	E									   0	   0	   0				  000											ITX1
+	X	100	ITY4	OE CPIC - Eurotire SRL	ITY4	ITY4	EU01	03	ITY4	IT	Goodyear Operations S.A.	Via V.Tobagi SNC		46040	Casaloldo	EUM1				X	IT				0000177625			01	E									   0	   0	   0				  000											ITY1
+	X	100	JPJC	Nippon Giant Tire	JPJC					JP	Nippon Giant Tire Co, Lt	Nakai, Tatsuno-cho, Tatsuno-sh		4124	Hyogo					X	JP				0000339570				E									   0	   0	   0				  000
+	X	100	LT40	CPIC - LT Motorsp. Event St.	LT40	LT40	EU01	03	LT40	ZU	Goodyear Operations S.A.					EUM1				X	LT				0007453448			01	E									   0	   0	   0				  000							0001	X			LT40
+	X	100	LT80	FOS LT - Estonia	LT80					EE	Goodyear Baltic OU					LTF1					LT				0005674844				E							1		   0	   0	   0				  000
+	X	100	LU01	CPIC - Colmar-Berg	LU01	LU01	EU01	03	LU01	L1	Goodyear Operations S.A.	Avenue Gordon Smith		7750	Colmar-Berg	EUM1				X	LU				0000022733			01	E									   0	   0	   0				  000							0001	X			LU01
+	X	100	LU02	CPIC - GMS	LU02	LU02	EU01	03	LU02	L3	Goodyear Operations S.A.	Avenue Gordon Smith		7740	Colmar-Berg	EUM1				X	LU				0000022734			01	E									   0	   0	   0				  000											LU02
+	X	100	LU03	CPIC - Dudelange	LU03	LU03	EU01	03	LU03	L1	Goodyear Operations S.A.	Zone Industrielle Riedgen		3451	Dudelange (Diddeleng)	EUP1				X	LU				0005547585			01	E									   0	   0	   0				  000							0001	X			LU03
+	X	100	LU04	CPIC Proactive Solutions	LU04	LU04	EU02	03	LU04	LU	Goodyear Operations S.A.	Route de Roost - Mold Plant		7750	Colmar-Berg	EUP1				X	LU				0006182177			01	E									   0	   0	   0				  000							0001	X			LU04
+	X	100	LU05	TAAS CPIC	LU05	LU06	EU04	03	LU06	LU	Goodyear Operations S.A.	1 Rue du Campus		7795	Bissen	EUT1				X	LU				0008305436			01	E									   0	   0	   0				  000							0001	X			LU06
+	X	100	LU20	YRC Colmar-Berg	LU20	LU20	EU20	03	LU20	L1	YOKOHAMA	Avenue Gordon Smith		7750	Colmar-Berg	EUM1				X	LU				0008959541			01	E									   0	   0	   0				  000							0001	X			LU01
+	X	100	LU22	Goodyear Mounting Solutions	LU22	LU22	LU36	02		L1	Goodyear Operations S.A.	Avenue Gordon Smith		7740	Colmar-Berg	LUM1				X	LU				0002611232			01	E									   0	   0	   0				  000											LU22
+	X	100	LU80	FOS - Luxembourg	LU80	LU80	EU01	03	LU80	LU	Goodyear S.A.	Avenue Gordon Smith		7750	Colmar-Berg	LUF1					LU				0000022735			01	E							1		   0	   0	   0				  000											BEME
+	X	100	LU90	Purchasing - Luxembourg	LU90					L1	Goodyear S.A.	Avenue Gordon Smith		7750	Colmar-Berg	LUP1					LU				0003287195				E							1		   0	   0	   0				  000
+	X	100	LUCR	LU Dudelange Production	LUCR	LUCR	LU01	03	LUCR	L8	Goodyear S.A.	Zone Industrielle Riedgen		3451	Dudelange (Diddeleng)	LUP1				X	LU				0005547586	LUCR		01	E									   0	   0	   0				  000							0001	X	X		LUCR
+	X	100	LUEX	CFL Logistics	LUEX	LUEX	EU01	03	LUEX	LU		240 Z.A.E. Wolser G		3434	Dudelange	EUP1				X	LU				0000022737			01	E									   0	   0	   0				  000											LUEX
+	X	100	LUGI	Goodyear Innovation Lux	LUGI	LUGI	LU35	10	LUGI	L8	Goodyear S.A.	Avenue Gordon Smith		7750	Colmar-Berg	LUP3				X	LU				0000022738	LUGI		01	E									   0	   0	   0				  000							0001		X
+	X	100	LUL1	CPIC Manufact. - Colmar-Berg	LUL1	LUL1	EU01	03	LUL1	L7	Goodyear Operations S.A.	Avenue Gordon Smith		7750	Colmar-Berg	EUP1				X	LU				0000022739			01	E									   0	   0	   0				  000
+	X	100	LUL3	CPIC Manufact. - Dudelange	LUL3	LUL3	EU01	03	LUL3	L1	Goodyear Operations S.A.	Z.A.E. Wolser H320		3451	Dudelange	EUP1				X	LU				0005547587			01	E									   0	   0	   0				  000							0001	X			LUL3
+	X	100	LULI	Luxembourg Fabric Plant	LULI	LULI	LU34	10		LU	Goodyear S.A.	Z.I. Jean Piret		7750	Colmar-Berg	LUP2				X	LU				0000022740	LULI		01	E									   0	   0	   0				  000							0001		X
+	X	100	LULM	Luxembourg Mold Plant	LULM	LULM	LU32	10	LULM	ZL	Goodyear S.A.	Route de Roost		7750	Colmar-Berg	LUP2				X	LU				0000022741	LULM		01	E		ZP1							   0	   0	   0				  000
+	X	100	LULU	Luxembourg Tire Plant	LULU	LULU	LU01	03	LULU	L8	Goodyear S.A.	Avenue Gordon Smith		7750	Colmar-Berg	LUP1				X	LU				0000022742	LULU		01	E									   0	   0	   0				  000							0001	X	X
+	X	100	LULW	Luxembourg Wire Plant	LULW	LULW	LU33	10		LU	Goodyear S.A.	Route de Roost		7791	Bissen	LUP2				X	LU				0000022743	LULW		01	E									   0	   0	   0				  000
+	X	100	LUMC	Goodyear Mounting Solutions	LUMC	LUMC	LU36	03		L1	GMS	Avenue Gordon Smith		7750	Colmar-Berg	LUP4				X	LU				0003608500	LUMC		01	E		ZP1							   0	   0	   0				  000
+	X	100	LUPS	Luxembourg Tire Plant	LUPS	LUPS	LU01	03		LU	Goodyear S.A.	Avenue Gordon Smith		7750	Colmar-Berg	EUP1				X	LU				0005899585	LULU		01	E									   0	   0	   0				  000							0001	X	X
+	X	100	LURD	R&D Lux	LURD	LURD	LU01	03		L1	Goodyear S.A.	Avenue Gordon Smith		7750	Colmar-Berg	LUP3				X	LU				0000022744	LURD		01	E									   0	   0	   0				  000
+	X	100	LUX1	OE CPIC – GMS c/o Scania	LUX1	LUX1	EU01	03	LUX1	L1	Goodyear Operations S.A.	Avenue Gordon Smith		7740	Colmar-Berg	EUM1				X	LU				0000098295			01	E									   0	   0	   0				  000											LU02
+	X	100	LUX2	OE CPIC – GMS c/o Paccar	LUX2	LUX2	EU01	03	LUX2	L1	Goodyear Operations S.A.	Avenue Gordon Smith		7740	Colmar-Berg	EUM1				X	LU				0000098296			01	E									   0	   0	   0				  000											LU02
+	X	100	LUX3	OE CPIC - PNEUS GRAAS	LUX3	LUX3	EU01	03	LUX3	L1	Goodyear Operations S.A.	Zone Industrielle Grasbusch		3370	Leudelange	EUM1				X	LU				0000098297			01	E									   0	   0	   0				  000											LU02
+	X	100	LV40	CPIC - LV Motorsp. Event St.	LV40	LV40	EU01	03	LV40	ZU	Goodyear Operations S.A.					EUM1				X	LV				0007453449			01	E									   0	   0	   0				  000							0001	X			LV40
+	X	100	LV80	FOS - LV (Estonia)	LV80					EE	Goodyear Baltic OU					LVF1					LV				0005674845				E							1		   0	   0	   0				  000
+	X	100	MYMA	MY MYMA Shah Alam production	MYMA					MY	Goodyear Malaysia Berhad	Kawasan Perindustrian Shah Ala	7049	40914	Selangor					X	MY				0000339571				E									   0	   0	   0				  000
+	X	100	NL01	CPIC - Vianen	NL01	NL01	EU01	03	NL01	NL	Goodyear Operations S.A.	Dijkleger 4		4131MA	Vianen	EUM1				X	NL				0000098298			01	E									   0	   0	   0				  000											NL01
+	X	100	NL40	CPIC - NL Motorsp. Event St.	NL40	NL40	EU01	03	NL40	ZU	Goodyear Operations S.A.					EUM1				X	NL				0000522876			01	E									   0	   0	   0				  000							0001	X			NL40
+	X	100	NL60	Barge Terminal Tilburg BV	NL60	NL60	NL20	10	NL60	NL	c/o Goodyear (Nederland) BV	Geminiweg 51		5015 BP	TILBURG	NLA1				X	NL				0001575052			01	E									   0	   0	   0				  000							0001	X			NL60
+	X	100	NL61	Goodyear BV Tilburg	NL61	NL61	NL20	10	NL61	NL	Aviation EMEA	Ledeboerstraat 21		5048 AC	TILBURG	NLA1				X	NL				0001575053			01	E									   0	   0	   0				  000							0001	X			NL61
+	X	100	NL80	FOS - Netherlands	NL80	NL80	EU01	03	NL80	NL	Goodyear Netherlands	Archimedesbaan 15		3439 ME	Nieuwegein	NLF1					NL				0000098299			01	E							1		   0	   0	   0				  000											NLLE
+	X	100	NL90	Purchasing - Netherlands HO	NL90					NL	Goodyear Netherlands	Nevelgaarde 8		3436 ZZ	Nieuwegein	NLP1					NL				0000098300											1		   0	   0	   0				  000
+	X	100	NLTB	Purchasing - AVIATION	NLTB					NL	Goodyear Aviation Tires	Ledeboerstraat 21		5048 AC	Tilburg	NLP2				X	NL				0001575073	NLTB												   0	   0	   0				  000
+	X	100	NLX1	OE CPIC - De Molen	NLX1	NLX1	EU01	03	NLX1	NL	Goodyear Operations S.A.	Rustvenseweg 2	209	5375 KW	Reek	EUM1				X	NL				0000022745			01	E									   0	   0	   0				  000											NLX1
+	X	100	NLY1	OE CPIC - Zetra Sittard	NLY1	NLY1	EU01	03	NLY1	NL	Goodyear Operations S.A.	Industriestraat 12		6135	Sittard	EUM1				X	NL				0000098301			01	E									   0	   0	   0				  000											NLY1
+	X	100	NO01	CPIC - Oslo	NO01	NO01	EU01	03	NO01	NO	Goodyear Operations S.A.	Holmlia, Rosenholmsveije		1252	Oslo	EUM1				X	NO				0000772642			01	E									   0	   0	   0				  000							0001	X			NO01
+	X	100	NO02	CPIC - Moss	NO02	NO02	EU01	03	NO02	NO	Goodyear Operations S.A.	Treveien 9		1540	Vestby	EUM1				X	NO				0000772643			01	E									   0	   0	   0				  000							0001	X			NO02
+	X	100	NO20	YRC Oslo	NO20	NO20	EU20	03	NO20	NO	YOKOHAMA	Torvuttaket 26		1540	Vestby	EUM1				X	NO				0008959542			01	E									   0	   0	   0				  000							0001	X			NO02
+	X	100	NO40	CPIC - NO Motorsp. Event St.	NO40	NO40	EU01	03	NO40	ZU	Goodyear Operations S.A.					EUM1				X	NO				0000946132			01	E									   0	   0	   0				  000							0001	X			NO40
+	X	100	NO80	FOS - Norway	NO80		EU01	03	NO80	NO	Goodyear Norge A/S	Holmlia, Rosenholmsveijen 6		1252	Oslo	NOF1					NO				0000772644			01	E							1		   0	   0	   0				  000
+	X	100	NO90	Purchasing - Norway HQ	NO90					NO	Goodyear Norge A/S	Lysaker Torg 15	6416	1366	Lysaker	NOP1				X	NO				0000772694				E							1		   0	   0	   0				  000
+	X	100	PL01	CPIC - Tarnow	PL01	PL01	EU01	03	PL01	P2	Goodyear Operations S.A.	Ul. Szklana 31		33-100	Tarnow	EUM1				X	PL				0001065167			01	E									   0	   0	   0				  000							0001	X			PL01
+	X	100	PL02	CPIC - Debica	PL02	PL02	EU01	03	PL02	P2	Goodyear Operations S.A.	Ul. 1 Maja 1		39-200	Debica	EUM1				X	PL				0001234891			01	E									   0	   0	   0				  000							0001	X			PL02
+	X	100	PL03	CPIC - Mokrzec	PL03	PL03	EU01	03	PL03	P2	Goodyear Operations S.A.	Mokrzec 50		39-220	Mokrzec	EUM1				X	PL				0007910914			01	E									   0	   0	   0				  000							0001	X			PL03
+	X	100	PL20	YRC Tarnow	PL20	PL20	EU20	03	PL20	P2	YOKOHAMA	Ul. Szklana 31		33-100	Tarnow	EUM1				X	PL				0008959543			01	E									   0	   0	   0				  000							0001	X			PL01
+	X	100	PL21	T.C. Debica - Tarnow	PL21	PL21	PL02	10	PL21	PL	Tire Company Debica S.A.	Ul. Szklana 31		33-100	Tarnow	PLM1				X	PL				0001065168			01	E									   0	   0	   0				  000							0001	X			PL01
+	X	100	PL80	FOS - Poland	PL80		EU01	03		PL	Goodyear Polska Sp z o.o.	Ul. 17 Stycznia 48		02-146	Warszawa	PLF1					PL				0001065170			01	E							1		   0	   0	   0				  000
+	X	100	PL81	FOS Debica	PL81		EU01	03		PL	Tire Company Debica S.A.					PLF2					PL				0001065171			01	E							1		   0	   0	   0				  000
+	X	100	PL90	Purchasing - Warszawa HQ	PL90					PL	Goodyear Polska Sp z o.o.	Ul. Krakowiaków 46		02-255	Warszawa	PLP2					PL				0001065145				E							1		   0	   0	   0				  000
+	X	100	PL91	Debica EEMEA Head Office	PL91					PL	Goodyear EEMEA Fin.Serv.Cent.	ul. 1 Maja 1		39-200	Debica	PLP3					PL				0001065146				E									   0	   0	   0				  000
+	X	100	PL92	T.C. Debica - Tarnow-WSI	PL92					PL	Goodyear EEMEA Fin.Serv.Cent.	ul. 1 Maja 1		39-200	Debica						PL				0006714650				E									   0	   0	   0				  000
+	X	100	PLPL	PL Tire Plant	PLPL	PLPL	PL02	10	PLPL	P8	Tire Company Debica S.A.	ul. 1 Maja 1		39-200	Debica	PLP1				X	PL				0000086689	PLPL		01	L									   0	   0	   0				  000							0001	X	X		PLPL
+	X	100	PLSP	PL Machine Shop	PLSP	PLSP	PL02	10	PLSP	PL	Tire Company Debica S.A.	ul. 1 Maja 1		39-200	Debica	PLP1				X	PL				0001065147	PLSP		01	L		ZP1							   0	   0	   0				  000											PLSP
+	X	100	PLV1	ENIS Kraków	PLV1	PLV1	EU01	03	PLV1	PL	Goodyear Operations S.A.	Cementowa 10		30-740	Kraków	EUM1				X	PL				0006524404			01	E									   0	   0	   0				  000											PLV1
+	X	100	PLV2	ENiS S#kowice	PLV2	PLV2	EU01	03	PLV2	PL	Goodyear Operations S.A.	S#kowice 211		66-620	S#kowice	EUM1				X	PL				0006524405			01	E									   0	   0	   0				  000											PLV2
+	X	100	PLY1	OE CPIC - Fastek Fitting Tychy	PLY1	PLY1	EU01	03	PLY1	PX	Goodyear Operations S.A.	Ul. Oswiecimska 401/2		43-100	Tychy	EUM1				X	PL				0000098302			01	E									   0	   0	   0				  000											PLY1
+	X	100	PT01	CPIC - Montijo	PT01	PT01	EU01	03	PT01	PT	Goodyear Operations S.A.	Rua dos tractores 647		2870-607	Montijo	EUM1				X	PT				0000596386			01	E									   0	   0	   0				  000											PT01
+	X	100	PT40	CPIC - PT Motorsp. Event St.	PT40	PT40	EU01	03	PT40	ZU	Goodyear Operations S.A.					EUM1				X	PT				0000522877			01	E									   0	   0	   0				  000							0001	X			PT40
+	X	100	PT80	FOS - Portugal	PT80	PT80	EU01	03	PT80	PT	GY Portugal Unipessoal, Ltda	Av. Severino Falcao, 12-A		2686-402	Prior Velho	PTF1					PT				0000596387			01	E							1		   0	   0	   0				  000
+	X	100	PT81	FOS – Portugal	PT81		EU01	11		PT	GY Portugal Unipessoal, Ltda	Av. Severino Falcao, 12-A		2686-402	Prior Velho	EUF1					PT				0007326504	EU80		01	E							1		   0	   0	   0				  000
+	X	100	PT90	Purchasing - Portugal HQ	PT90	PT90				BE	GY Portugal Unipessoal, Ltda	AV. da Republica 50 2º Piso		1050-196	Lisboa	PTP1				X	PT				0000596388				E							1		   0	   0	   0				  000
+	X	100	PTX1	OE CPIC - Rangel-Distributors	PTX1	PTX1	EU01	03	PTX1	PT	Goodyear Operations S.A.	Rua dos Tractores, 647		2870-607	Montijo	EUM1				X	PT				0000022746			01	E									   0	   0	   0				  000											PTX1
+	X	100	PTY1	OE CPIC - Rangel Montijo	PTY1	PTY1	EU01	03	PTY1	PT	Goodyear Operations S.A.	Rua dos Tractores, 647		2870-607	Montijo	EUM1				X	PT				0000098303			01	E									   0	   0	   0				  000											PTY1
+	X	100	PTY2	OE CPIC - ContiLemmerz Palmela	PTY2	PTY2	EU01	03	PTY2	PT	Goodyear Operations S.A.	Parque Industrial Auto Lote 12		2950	Palmela	EUM1				X	PT				0000098304			01	E									   0	   0	   0				  000											PTY2
+	X	100	RO01	CPIC - Bucharest	RO01	RO01	EU01	03	RO01	RO	Goodyear Operations S.A.	Bucharest West Park, Strada D		077096	Dragomiresti Vale, Ilfov	EUM1				X	RO				0000772645			01	E									   0	   0	   0				  000											RO01
+	X	100	RO20	YRC Bucharest	RO20	RO20	EU20	03	RO20	RO	Yokohama	Bucharest West Park, Strada D		077096	Dragomiresti Vale, Ilfov	EUM1				X	RO				0009129971			01	E									   0	   0	   0				  000											RO01
+	X	100	RO80	FOS - Romania	RO80		EU01	03	RO80	RO	Goodyear Romania SRL	Soseaua Pipera nr. 59, Sect			Bucuresti	ROF1					RO				0000772646			01	E							1		   0	   0	   0				  000
+	X	100	RO90	Purchasing - Romania HQ	RO90					RO	Goodyear Romania SRL	Cladirea B, Etaj 5, Sector 2		020308	Bucuresti	ROP1				X	RO	R59			0000772695				E							1		   0	   0	   0				  000
+	X	100	RO91	Bucuresti Head Office	RO91					RO	Goodyear Operations Romania	Sos. Pipera, No.43, Floreasca		020308	Bucharest	ROP2					RO				0001065148				E									   0	   0	   0				  000
+	X	100	ROV1	VMI - Delticom-Sacalaz	ROV1	ROV1	EU01	03	ROV1	RO	Goodyear Operations S.A.	Dietrich-Honold Street, Nr. 1		307370	Sacalaz	EUM1				X	RO				0006524406			01	E									   0	   0	   0				  000											ROV1
+	X	100	ROY1	OE CPIC - Dumagas Tr. & Log.	ROY1	ROY1	EU01	03	ROY1	RO	Goodyear Operations S.A.	Bechetului Str T30		207365	Malu Mare	EUM1				X	RO				0001231247			01	E									   0	   0	   0				  000											ROY1
+	X	100	RS01	GY Kruševac	RS01	RS01	RS01	10	RS01	SR	Goodyear Serbia d.o.o.	Savska 33			Kruševac	RSM1				X	RS				0007264269			01	E									   0	   0	   0				  000											RS01
+	X	100	RS02	GY Belgrade	RS02	RS02	RS01	10	RS02	SQ	Goodyear Serbia d.o.o.	Dositejeva 55		22310	Šimanovci	RSM1					RS				0007264270			01	E									   0	   0	   0				  000											RS02
+	X	100	RS03	GY Belgrade Bond	RS03	RS03	RS01	10	RS03	SR	Goodyear Serbia d.o.o.	Savski nasip 7		11070	Belgrade	RSM1					RS				0007264271			01	E									   0	   0	   0				  000											RS02
+	X	100	RS80	FOS - Serbia	RS80		RS01	11		BG	Goodyear Serbia d.o.o.	Savska 33		37000	Kruševac	RSF1					RS				0009469526			01	E							1		   0	   0	   0				  000
+	X	100	RSKR	GY Kruševac Production	RSKR	RSKR	RS01	10	RSKR	SR	Goodyear Serbia d.o.o.	Savska 33			Kruševac	RSP1				X	RS				0007264272	RSKR		01	E									   0	   0	   0				  000							0001	X	X		RSKR
+	X	100	RU01	RU01 - Warehouse stock	RU01	RU01	RU01	10	RU01	RU	Goodyear Russia L.L.C.	Kriulinskiy proezd dom 5		144001	Electrostal	RUM1				X	RU				0001399704			01	E									   0	   0	   0				  000							0001	X			RU01
+	X	100	RU02	RU02 - Customs point	RU02	RU02	RU01	10	RU02	RU	Goodyear Russia L.L.C.	Terminalniy proezd str.3		143391	Narofominsk	RUM1				X	RU				0001399705			01	E									   0	   0	   0				  000							0001	X			RU02
+	X	100	RU03	RU03 - Direct shipments	RU03	RU03	RU01	10	RU03	RU	Goodyear Russia L.L.C.	Kriulinskiy proezd dom 5		144001	Electrostal	RUM1				X	RU				0001399706			01	E									   0	   0	   0				  000							0001	X			RU03
+	X	100	RU04	RU04 - Novosibirsk stock	RU04	RU04	RU01	10		RU	Goodyear Russia L.L.C.	Bogdana Khmelnitskogo, 90		630027	Novosibirsk	RUM1				X	RU				0004458532			01	E									   0	   0	   0				  000							0001	X			RU04
+	X	100	RU05	RU05 - Customs point direct	RU05	RU05	RU01	10		RU	Goodyear Russia L.L.C.	Terminalniy proezd str.3		143391	Narofominsk	RUM1				X	RU				0006919800			01	E									   0	   0	   0				  000							0001	X			RU05
+	X	100	RU80	FOS - Russia	RU80	RU80	RU01	11		RU	Goodyear Russia L.L.C.	Leningradskoe highway 16A		125171	Moscow	RUF1					RU				0003765749			01	E							1		   0	   0	   0				  000											RU03
+	X	100	RU90	Purchasing - Moscow HQ R99	RU90					RU	Goodyear Russia L.L.C.	3, 16A, Leningradskoe shosse		125171	Moscow	RUP1					RU				0001065149				E							1		   0	   0	   0				  000
+	X	100	SA90	Purchasing - Saudi HQ	SA90					W1	Goodyear Saudi Arabia	3418 Khalid Ibn Al Walid, 7524		34225	Ad Dammam	SAP1					SA				0006298438				E									   0	   0	   0				  000
+	X	100	SE01	CPIC - Jönköping	SE01	SE01	EU01	03	SE01	SJ	Goodyear Operations S.A.	Möbelvägen 39		556 52	Jönköping	EUM1				X	SE				0000772647			01	E									   0	   0	   0				  000							0001	X			SE01
+	X	100	SE20	YRC Jönköping	SE20	SE20	EU20	03	SE20	SJ	Yokohama	Möbelvägen 39		556 52	Jönköping	EUM1				X	SE				0008959544			01	E									   0	   0	   0				  000							0001	X			SE01
+	X	100	SE40	CPIC - SE Motorsp. Event St.	SE40	SE40	EU01	03	SE40	ZU	Goodyear Operations S.A.					EUM1				X	SE				0000946133			01	E									   0	   0	   0				  000							0001	X			SE40
+	X	100	SE80	FOS - Sweden	SE80		EU01	03	SE80	SE	Goodyear Sverige AB	Mäklaregatan		602 28	Norrköping	SEF1					SE				0000772648			01	E							1		   0	   0	   0				  000
+	X	100	SE90	Purchasing - Sweden HQ	SE90					SE	Goodyear Sverige AB	Rosenlundsgatan 50, 1 tr		118 63	Stockholm	SEP1				X	SE				0000772696				E							1		   0	   0	   0				  000
+	X	100	SEV1	VMI - Delticom-Kavlinge	SEV1	SEV1	EU01	03	SEV1	SE	Goodyear Operations S.A.	BINTJEVÄGEN 2		244 39	KÄVLINGE	EUM1				X	SE				0006524407			01	E									   0	   0	   0				  000											SEV1
+	X	100	SEY1	OE CPIC - TTAB Trollhättan	SEY1	SEY1	EU01	03	SEY1	SE	Goodyear Operations S.A.	Stallbackhamnen		461 38	Trollhättan	EUM1				X	SE				0000098305			01	E									   0	   0	   0				  000											SEY1
+	X	100	SI01	CPIC - Kranj	SI01	SI01	EU01	03	SI01	S3	Goodyear Operations S.A.	Skofjeloska cesta 6		4000	Kranj	EUM1				X	SI				0000772649			01	E									   0	   0	   0				  000							0001	X			SI01
+	X	100	SI20	YRC Kranj	SI20	SI20	EU20	03	SI20	S3	YOKOHAMA	Skofjeloska cesta 6		4000	Kranj	EUM1				X	SI				0008959545			01	E									   0	   0	   0				  000							0001	X			SI01
+	X	100	SI80	FOS - Slovenia	SI80		EU01	03	SI80	SI	Goodyear Slovenija, d. o. o.	Škofjeloška c. 6		4000	Kranj	SIF1					SI				0000772650			01	E							1		   0	   0	   0				  000
+	X	100	SI90	Purchasing - Slovenia HQ	SI90					SI	Goodyear Slovenija, d. o. o.	Škofjeloška c. 6		4000	Kranj	SIP1				X	SI				0002812064				E							1		   0	   0	   0				  000
+	X	100	SIS1	CPIC Manufact. - Slovenia	SIS1	SIS1	EU01	03	SIS1	S7	Goodyear Operations S.A.	Skofjeloska 6		4000	Kranj	EUP1				X	SI				0000772697			01	5									   0	   0	   0				  000											SIS1
+	X	100	SISL	SI Tire Plant	SISL	SISL	SI01	03	SISL	S7	Goodyear Slovenija, d. o. o.	Škofjeloška c. 6		4000	Kranj	SIP1				X	SI				0000037256	SISL		01	5									   0	   0	   0				  000							0001	X	X
+	X	100	SISP	SI Machine Shop	SISP	SISP	SI32	03	SISP	SI	Goodyear Slovenija, d. o. o.	Škofjeloška c. 6		4000	Kranj	SIP1				X	SI				0000177626	SISP		01	E		ZP1							   0	   0	   0				  000
+	X	100	SIY1	OE CPIC - BTC Novo Mesto	SIY1	SIY1	EU01	03	SIY1	SI	Goodyear Operations S.A.	Cesca vas 40		8000	Novo Mesto	EUM1				X	SI				0000564206			01	E									   0	   0	   0				  000											SIY1
+	X	100	SK01	CPIC - Senec	SK01	SK01	EU01	03	SK01	SK	Goodyear Operations S.A.	Dialni#ná cesta 10		903 01	Senec	EUM1				X	SK				0000772651			01	E									   0	   0	   0				  000							0001	X			SK01
+	X	100	SK40	CPIC - SK Motorsp. Event St.	SK40	SK40	EU01	03	SK40	ZU	Goodyear Operations S.A.					EUM1				X	SK				0003287188			01	E									   0	   0	   0				  000							0001	X			SK40
+	X	100	SK80	FOS - Slovakia	SK80		EU01	03	SK80	SK	Goodyear Slovakia s.r.o.	Mlynské Nivy 53		820 06	Bratislava	SKF1					SK				0000772652			01	E							1		   0	   0	   0				  000
+	X	100	SK90	Purchasing - Slovakia HQ	SK90					SK	Goodyear Slovakia s.r.o.	Ivanska cesta 30/b		821 04	BRATISLAVA	SKP1				X	SK				0000772698				E							1		   0	   0	   0				  000
+	X	100	SKV1	VMI - Delticom-Bratislava	SKV1	SKV1	EU01	03	SKV1	SK	Goodyear Operations S.A.	Opletalova 87, warehouse BRA2C		841 07	Bratislava	EUM1				X	SK				0006616461			01	E									   0	   0	   0				  000											SKV1
+	X	100	SKY1	OE CPIC - PTG Slovakia S.R.O.	SKY1	SKY1	EU01	03	SKY1	SK	Goodyear Operations S.A.	P3 Park, Hala DC 1		900 55	Lozorno	EUM1				X	SK				0000098306			01	E									   0	   0	   0				  000											SKY1
+	X	100	THTH	TH THTH Bangkok production	THTH					TH	Goodyear Thailand Public Co	66 Asoke Road, Sukhumvit 21		10110	Bangkok					X	TH				0000339572				E									   0	   0	   0				  000
+	X	100	TR01	Goodyear Adapazari	TR01	TR01	TR01	10	TR01	TW	Goodyear Lastikleri T.A.S.	Good Year, Arifbey		54580	Arifiye	TRM1				X	TR	54			0001065172			01	E									   0	   0	   0				  000											TR01
+	X	100	TR02	Goodyear Izmit	TR02	TR02	TR01	10	TR02	TW	Goodyear Lastikleri T.A.S.	Ovacik, Cuhane Cad. NO 2		41140	Basiskele	TRM1				X	TR	41			0001065173			01	E									   0	   0	   0				  000											TR02
+	X	100	TR03	Goodyear Gebze Depo	TR03	TR03	TR01	10	TR03	TW	Goodyear Lastikleri T.A.S.	cad. No:15		41400	Gebze / Kocaeli	TRM1				X	TR				0001065174			01	E									   0	   0	   0				  000							0001	X			TR03
+	X	100	TR20	YRC Gebze Depo	TR20	TR20	TR20	10	TR20	TW	YOKOHAMA	#nönü mh. Fatih Sultan Mehmet		41400	Gebze / Kocaeli	TRM1				X	TR				0008959546			01	E									   0	   0	   0				  000											TR03
+	X	100	TR80	FOS - Turkey	TR80		EU01	03		TR	Goodyear Lastikleri T.A.S.					TRF1					TR				0001065175			01	E							1		   0	   0	   0				  000
+	X	100	TR90	Purchasing - Istanbul HQ	TR90					TW	Goodyear Lastikleri T.A.S.			34125	ISTANBUL	TRP1					TR				0001065150				E							1		   0	   0	   0				  000
+	X	100	TRTU	TR Izmit Production	TRTU	TRTU	TR01	10	TRTU	TR	Goodyear Lastikleri T.A.S.	Ovacik, Cuhane Cad. NO 2		41140	Basiskele	TRP1				X	TR	41			0000086690	TRTU		01	E									   0	   0	   0				  000							0001	X	X		TRTU
+	X	100	TRTZ	TR Adapazari Production	TRTZ	TRTZ	TR01	10	TRTZ	TR	Goodyear Lastikleri T.A.S.	Good Year, Arifbey	27	54580	Arifiye	TRP1				X	TR	54			0000086691	TRTZ		01	E									   0	   0	   0				  000							0001	X	X		TRTZ
+	X	100	TWTA	Goodyear Taiwan	TWTA						Goodyear Taiwan Ltd	4F 71 Nanking E Rd, Sec 2,Tai-		00104	Taipei						TW				0000086692				E									   0	   0	   0				  000
+	X	100	UA02	UA02 - Customs point	UA02	UA02	UA01	10	UA02	UA	Goodyear Ukraine LLC			07442	Velika Dimerka	UAM1				X	UA				0001575054			01	E									   0	   0	   0				  000							0001	X			UA02
+	X	100	UA03	UA03 - Shipments	UA03	UA03	UA01	10	UA03	UA	Goodyear Ukraine LLC	Illinska, 8, block 8		04070	Kiev	UAM1				X	UA				0001575055			01	E									   0	   0	   0				  000							0001	X			UA03
+	X	100	UA05	UA05 - Customs point 2	UA05	UAV1	UA01	03	UA05	UA	Goodyear Ukraine LLC			07442	Velika Dimerka	UAM1				X	UA				0007131220			01	E									   0	   0	   0				  000							0001	X			UA05
+	X	100	UA20	YRC UA - Customs Point	UA20	UA20	UA20	10	UA20	UA	YOKOHAMA			07442	Velika Dimerka	UAM1				X	UA				0008993529			01	E									   0	   0	   0				  000							0001	X			UA02
+	X	100	UA21	YRC UA - Direct Shipments	UA21	UA21	UA20	10	UA21	UA	YOKOHAMA	Illinska, 8, block 8		04070	Kiev	UAM1				X	UA				0008993530			01	E									   0	   0	   0				  000							0001	X			UA03
+	X	100	UA90	Purchasing - UA Kyiv HQ	UA90					UA	Goodyear Ukraine LLC	ILJINSKAYA STR., 8		04070	Kyiv	UAP1					UA				0001065151				E							1		   0	   0	   0				  000
+	X	100	UAV1	VMI - Infoshina	UAV1	UAV1	UA01	03	UAV1	UA	Goodyear Ukraine LLC	1a Pukhivska Str.		02660	Kyiv	UAM1				X	UA				0007131221			01	E									   0	   0	   0				  000							0001	X			UAV1
+	X	100	ZA01	SA Uitenhage	ZA01	ZA01	ZA01	10	ZA01	ZA	Goodyear SA (Pty) Ltd	Algoa Road	126	6229	Uitenhage	ZAM1				X	ZA	EC			0001277642			01	E									   0	   0	   0				  000							0001	X			ZA01
+	X	100	ZA02	SA Bond	ZA02	ZA02	ZA01	10	ZA02	ZA	Goodyear SA (Pty) Ltd	Algoa Road	126	6229	Uitenhage	ZAM1				X	ZA	EC			0001277643			01	E									   0	   0	   0				  000							0001	X			ZA01
+	X	100	ZA03	SA Germiston	ZA03	ZA03	ZA01	10	ZA03	ZA	Goodyear SA (Pty) Ltd	A.G. de Witt Drive	562	1401	Germiston	ZAM1				X	ZA	GT			0001277644			01	E									   0	   0	   0				  000							0001	X			ZA03
+	X	100	ZA04	SA Cape Town	ZA04	ZA04	ZA01	10	ZA04	ZA	Goodyear SA (Pty) Ltd	86 Fitz Maurice Ave	261	7460	Goodwood	ZAM1				X	ZA	WC			0001277645			01	E									   0	   0	   0				  000							0001	X			ZA04
+	X	100	ZA05	SA Durban	ZA05	ZA05	ZA01	10	ZA05	ZA	Goodyear SA (Pty) Ltd	6 SPRITE PLACE		3610	PINETOWN	ZAM1				X	ZA	KZN			0001277646			01	E									   0	   0	   0				  000							0001	X			ZA05
+	X	100	ZA06	SA Bloemfontein	ZA06	ZA06	ZA01	10	ZA06	ZA	Goodyear SA (Pty) Ltd	7 Frikkie van Kraayenburg Stre	4280	9301	Bloemfontein	ZAM1				X	ZA	FS			0001277647			01	E									   0	   0	   0				  000							0001	X			ZA06
+	X	100	ZA07	SA Durban OTR UL	ZA07	ZA07	ZA01	10	ZA07	ZA	Goodyear SA (Pty) Ltd	6 Bluff Road		4052	Durban	ZAM1				X	ZA	KZN			0002713999			01	E									   0	   0	   0				  000							0001	X			ZA07
+	X	100	ZA09	SA Coega	ZA09	ZA09	ZA01	10	ZA09	ZA	Goodyear SA (Pty) Ltd	62 Umlambo Street		6001	PORT ELIZABETH	ZAM1				X	ZA	EC			0004140330			01	E									   0	   0	   0				  000							0001	X			ZA09
+	X	100	ZA10	SA Coega Bond	ZA10	ZA10	ZA01	10	ZA10	ZA	Goodyear SA (Pty) Ltd	62 Umlambo Street		6001	PORT ELIZABETH	ZAM1				X	ZA	EC			0004140331			01	E									   0	   0	   0				  000							0001	X			ZA09
+	X	100	ZA15	SA Durban Depot	ZA15	ZA15	ZA01	10	ZA15	ZA	Goodyear SA (Pty) Ltd	350 Umhlangane Road		4001	DURBAN	ZAM1				X	ZA	KZN			0005245046			01	E									   0	   0	   0				  000							0001	X			ZA05
+	X	100	ZA20	YRC ZA Uitenhage	ZA20	ZA20	ZA21	10	ZA20	ZA	YOKOHAMA	Algoa Road	126	6230	Uitenhage	ZAM1				X	ZA	EC			0008959547			01	E									   0	   0	   0				  000							0001	X			ZA01
+	X	100	ZA21	YRC SA Germiston	ZA21		ZA21	10	ZA21	ZA	YOKOHAMA	A.G. de Witt Drive	562	1401	Germiston	ZAM1				X	ZA	GT			0008959548			01	E									   0	   0	   0				  000							0001	X			ZA03
+	X	100	ZA22	YRC SA Coega	ZA22	ZA22	ZA21	10	ZA22	ZA	YOKOHAMA	62 Umlambo Street		6001	PORT ELIZABETH	ZAM1				X	ZA	EC			0008993531			01	E									   0	   0	   0				  000							0001	X			ZA09
+	X	100	ZA80	FOS - South Africa	ZA80	ZA80	ZA01	11		ZA	Goodyear SA (Pty) Ltd	AG DE WITT DRIVE		1401	GERMISTON	ZAF1					ZA	GT			0001277648			01	E							1		   0	   0	   0				  000											ZA01
+	X	100	ZA81	FOS - Trentyre South Africa	ZA81	ZA81	ZA02	11		ZA	Trentyre SA (Pty) Ltd	117 Prospect Rd.		6070	PORT ELIZABETH	ZAF2					ZA	EC			0005048417			01	E							1		   0	   0	   0				  000
+	X	100	ZA90	Purchasing - Port Elizabeth HQ	ZA90					ZA	Goodyear SA (Pty) Ltd	117 Prospect Road, Walmer	16	6001	Port Elizabeth	ZAP1					ZA				0001065152				E							1		   0	   0	   0				  000
+	X	100	ZA91	Goodyear Holdings	ZA91					ZA	GY Tyre&Rubber Holdings (Pty)	117 Prospect Road, Walmer	16	6001	Port Elizabeth	ZAP2					ZA				0001065153				E									   0	   0	   0				  000
+	X	100	ZASA	ZA Uitenhage production	ZASA	ZASA	ZA01	10	ZASA	Z8	Goodyear SA (Pty) Ltd	Algoa Road	126	6230	Uitenhage	ZAP1				X	ZA				0000086693	ZASA		01	E									   0	   0	   0				  000							0001	X	X		ZASA
+	X	100	ZATT	ZA Trentyre Retread	ZATT					ZA	Trentyre (Pty) Ltd	A G de Witt Drive		1400	GERMISTON	ZAP3				X	ZA				0005245042				E									   0	   0	   0				  000
+	X	100	ZZ3P	CPIC - Bridge 3rd Party Dummy	ZZ3P		EU01	03		99	Goodyear Operations S.A.				Luxembourg	EUM1				X	LU				0000022747			01	E									   0	   0	   0				  000											ZZ3P
